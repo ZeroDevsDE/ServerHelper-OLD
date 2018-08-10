@@ -2,5 +2,6 @@
 branches:
 - master
 projects: 
-- Server-Helper
+ Server-Helper:
+  path: "/"
 ...

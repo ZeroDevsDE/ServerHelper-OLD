@@ -14,6 +14,7 @@ use pocketmine\plugin\PluginBase;
 class ServerHelper extends PluginBase{
 	public function onEnable(){
 		$this->Banner();
+		$this->CommandLoader();
 		$this->getLogger()->info("Server-Helper was activated!");
 	}
 	private function Banner(){
@@ -26,5 +27,8 @@ class ServerHelper extends PluginBase{
 		"╚╝───╚╝╚╝╚╝╚═══╝╚═╝╚═╝╚╝───╚═══╝╚╝╚═╝──╚╝──╚═══╝"
 		);
 		$this->getLogger()->info($banner);
+	}
+	private function CommandLoader(){
+		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new HealCommand()]);
 	}
 }

@@ -14,19 +14,30 @@ Simple Helper Plugin for Servers!
     - [ ] /ban
     - [x] /feed
     - [ ] /tphere
-    - [ ] /test
+    - [x] /test
     - [x] /broadcast
     - [ ] /job
     - [ ] /report
+    - [ ] /nick
+    - [ ] /vanish
+    - [ ] /size | /playersize
+    - [ ] /love
 - [ ] Api's
     - [ ] BanAPI
     - [ ] JobAPI
     - [ ] TeleportAPI
     - [ ] ReportAPI
+    - [ ] Love/MaryAPI
 - [ ] other functions
     - [ ] multilang system
     - [x] Plugin prefix
     - [ ] Permission System
+    - [ ] addon Plugin
+- [ ] Fun Addons
+    - [ ] Player Size
+    - [ ] Vanish
+    - [ ] NickNames
+    - [ ] Love/MaryAPI
 
 ### Next TODO:
 Add Permissions to Commands(Permission System)

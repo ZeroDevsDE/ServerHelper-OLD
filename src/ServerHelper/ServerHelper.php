@@ -14,15 +14,17 @@ use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\plugin\Plugin;
 use pocketmine\plugin\PluginCommand;
+use pocketmine\utils\TextFormat as SH;
 use ServerHelper\CommandBase;
 use ServerHelper\commands\HealCommand;
 use ServerHelper\commands\FeedCommand;
+use ServerHelper\commands\FlyCommand;
 
 class ServerHelper extends PluginBase{
 	public function onEnable(){
 		$this->Banner();
 		$this->CommandLoader();
-		$this->getLogger()->info("Server-Helper was activated!");
+		$this->getLogger()->info(SH::GOLD . "Server-Helper was activated!");
 	}
 	private function Banner(){
 		$banner = strval(

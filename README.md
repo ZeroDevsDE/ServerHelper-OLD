@@ -1,5 +1,9 @@
 # Server-Helper
 ---
+| Discord |
+| :-----: |
+[![Discord](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/M7aQfm) |
+
 ### Description:
 Simple Helper Plugin for Servers!
 
@@ -11,7 +15,7 @@ Simple Helper Plugin for Servers!
     - [x] /feed
     - [ ] /tphere
     - [ ] /test
-    - [ ] /broadcast
+    - [x] /broadcast
     - [ ] /job
     - [ ] /report
 - [ ] Api's
@@ -22,6 +26,7 @@ Simple Helper Plugin for Servers!
 - [ ] other functions
     - [ ] multilang system
     - [ ] Plugin prefix
+    - [ ] Permission System
 
 ### You want to help us?
 Do it! Yeah were search for Developers of you want to help do it.

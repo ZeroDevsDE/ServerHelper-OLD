@@ -9,6 +9,7 @@ Simple Helper Plugin for Servers!
 
 ### Planned and finshed features:
 - [ ] Commands
+    - [ ] /shhelp
     - [x] /heal
     - [x] /fly
     - [ ] /ban
@@ -33,6 +34,7 @@ Simple Helper Plugin for Servers!
     - [x] Plugin prefix
     - [ ] Permission System
     - [ ] addon Plugin
+    - [ ] Config File
 - [ ] Fun Addons
     - [ ] Player Size
     - [ ] Vanish

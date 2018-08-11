@@ -25,6 +25,6 @@ class HealCommand extends CommandBase
    public function execute(CommandSender $sender, string $commandLabel, array $args)
    {
    	$sender->setHealth(20);
-   	$sender->sendMessage("Du wurdest geheilt!");
+   	$sender->sendMessage("You were healed!");
    }
 }

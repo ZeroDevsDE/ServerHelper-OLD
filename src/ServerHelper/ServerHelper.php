@@ -20,7 +20,7 @@ use ServerHelper\commands\HealCommand;
 use ServerHelper\commands\FeedCommand;
 use ServerHelper\commands\FlyCommand;
 use ServerHelper\commands\BroadcastCommand;
-use ServerHelper\command\TestCommand;
+use ServerHelper\commands\TestCommand;
 
 class ServerHelper extends PluginBase{
 	public function onEnable(){

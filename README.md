@@ -25,8 +25,11 @@ Simple Helper Plugin for Servers!
     - [ ] ReportAPI
 - [ ] other functions
     - [ ] multilang system
-    - [ ] Plugin prefix
+    - [x] Plugin prefix
     - [ ] Permission System
+
+### Next TODO:
+Add Permissions to Commands(Permission System)
 
 ### You want to help us?
 Do it! Yeah were search for Developers of you want to help do it.

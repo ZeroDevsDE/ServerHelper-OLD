@@ -38,5 +38,6 @@ class ServerHelper extends PluginBase{
 	private function CommandLoader(){
 		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new HealCommand()]);
 		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new FeedCommand()]);
+		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new FlyCommand()]);
 	}
 }

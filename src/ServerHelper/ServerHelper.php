@@ -19,6 +19,7 @@ use ServerHelper\CommandBase;
 use ServerHelper\commands\HealCommand;
 use ServerHelper\commands\FeedCommand;
 use ServerHelper\commands\FlyCommand;
+use ServerHelper\commands\BroadcastCommand;
 
 class ServerHelper extends PluginBase{
 	public function onEnable(){
@@ -41,5 +42,6 @@ class ServerHelper extends PluginBase{
 		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new HealCommand()]);
 		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new FeedCommand()]);
 		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new FlyCommand()]);
+		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new BroadcastCommand()]);
 	}
 }

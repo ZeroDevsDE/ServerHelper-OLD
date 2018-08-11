@@ -1,0 +1,33 @@
+<?php
+
+#╔═══╗╔═╗╔═╗╔═══╗╔═╗╔═╗╔═══╗╔═══╗╔═══╗╔════╗╔═══╗
+#║╔═╗║║║╚╝║║║╔══╝╚╗╚╝╔╝║╔═╗║║╔══╝║╔═╗║║╔╗╔╗║║╔═╗║
+#║╚═╝║║╔╗╔╗║║╚══╗─╚╗╔╝─║╚═╝║║╚══╗║╚═╝║╚╝║║╚╝║╚══╗
+#║╔══╝║║║║║║║╔══╝─╔╝╚╗─║╔══╝║╔══╝║╔╗╔╝──║║──╚══╗║
+#║║───║║║║║║║╚══╗╔╝╔╗╚╗║║───║╚══╗║║║╚╗──║║──║╚═╝║
+#╚╝───╚╝╚╝╚╝╚═══╝╚═╝╚═╝╚╝───╚═══╝╚╝╚═╝──╚╝──╚═══╝
+
+namespace ServerHelper\commands;
+
+use ServerHelper\ServerHelper;
+use ServerHelper\CommandBase;
+use pocketmine\plugin\PluginCommand;
+use pocketmine\command\Command;
+use pocketmine\command\CommandSender;
+use pocketmine\utils\TextFormat as SH;
+use pocketmine\Server;
+use pocketmine\Player;
+
+class TestCommand extends CommandBase{
+	
+	public $prefix = SH::GRAY . "» " . SH::AQUA . "S-H" . SH::GRAY . " » ";
+	
+   public function __construct() 
+   {
+      parent::__construct("test", "test command", "/test", ["t"]);
+   }
+   public function execute(CommandSender $sender, string $commandLabel, array $args)
+   {
+   	$sender->sendMessage($this->prefix . SH::GREEN . "Your Ping is: " . SH::GOLD . $sender->getPing() . SH::GREEN . "ms");
+   }
+}

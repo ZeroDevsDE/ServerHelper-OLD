@@ -8,15 +8,17 @@ Simple Helper Plugin for Servers!
     - [x] /heal
     - [ ] /fly
     - [ ] /ban
-    - [ ] /feed
+    - [x] /feed
     - [ ] /tphere
     - [ ] /test
     - [ ] /broadcast
     - [ ] /job
+    - [ ] /report
 - [ ] Api's
     - [ ] BanAPI
     - [ ] JobAPI
     - [ ] TeleportAPI
+    - [ ] ReportAPI
 - [ ] other functions
     - [ ] multilang system
 

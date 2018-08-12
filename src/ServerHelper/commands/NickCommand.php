@@ -18,9 +18,9 @@ class NickCommand extends CommandBase
 {
     public $prefix = SH::GRAY . "» " . SH::AQUA . "S-H" . SH::GRAY . " » ";
 
-    public function construct()
+    public function __construct()
     {
-        parent::construct("nickname", "nickname command", "/nickname <nickname>", ["nick"]);
+        parent::__construct("nickname", "nickname command", "/nick <nickname>", ["nick"]);
     }
     public function execute(CommandSender $sender, string $commandLabel, array $args)
     {
@@ -31,7 +31,7 @@ class NickCommand extends CommandBase
                     $sender->setNameTag($args[0]);
                     $sender->sendMessage($this->prefix . "Your Nickname was set to " . SH::GREEN . $args[0] . SH::GRAY . "!");
                 }else{
-                    $sender->sendMessage($this->prefix . "Usage: /nickname <nickname>");
+                    $sender->sendMessage($this->prefix . "Usage: /nick <nickname>");
                 }
             }else{
                 $sender->sendMessage($this->prefix . "You dont have the Permission to use this Command!");

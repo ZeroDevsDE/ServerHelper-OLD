@@ -28,7 +28,7 @@ class VanishCommand extends CommandBase
     {
         if($sender instanceof Player){
             if($sender->hasPermission("serverhelper.command.vanish")){
-                $sender->setDisplayName("");
+                $sender->setDisplayName(" ");
                 $sender->addEffect(new EffectInstance(Effect::getEffect(Effect::NIGHT_VISION), (99999999*20), (1), (false)));
                 $sender->addEffect(new EffectInstance(Effect::getEffect(Effect::INVISIBILITY), (99999999*20), (1), (false)));
                 $sender->sendMessage($this->prefix . "You are now Vanished!");
@@ -39,4 +39,3 @@ class VanishCommand extends CommandBase
             $sender->sendMessage($this->prefix . "This Command is Only for Players!");
         }
     }
-}

@@ -21,6 +21,7 @@ use ServerHelper\commands\FeedCommand;
 use ServerHelper\commands\FlyCommand;
 use ServerHelper\commands\BroadcastCommand;
 use ServerHelper\commands\TestCommand;
+use ServerHelper\commands\MeCommand;
 
 class ServerHelper extends PluginBase{
 	public function onEnable(){
@@ -28,6 +29,12 @@ class ServerHelper extends PluginBase{
 		$this->CommandLoader();
 		$this->getLogger()->info(SH::GOLD . "Server-Helper was activated!");
 	}
+	
+	public function onDisable(){
+		$this->Banner();
+		$this->getLogger()->info($this->prefix . "Server-Helper was stopped!");
+	}
+	
 	private function Banner(){
 		$banner = strval(
 		"╔═══╗╔═╗╔═╗╔═══╗╔═╗╔═╗╔═══╗╔═══╗╔═══╗╔════╗╔═══╗".
@@ -45,5 +52,6 @@ class ServerHelper extends PluginBase{
 		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new FlyCommand()]);
 		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new BroadcastCommand()]);
 		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new TestCommand()]);
+		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new MeCommand()]);
 	}
 }

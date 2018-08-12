@@ -20,8 +20,8 @@ Simple Helper Plugin for Servers!
     - [x] /broadcast
     - [ ] /job
     - [ ] /report
-    - [ ] /nick
-    - [ ] /vanish
+    - [x] /nick
+    - [x] /vanish
     - [ ] /size | /playersize
     - [ ] /love
 - [ ] Api's

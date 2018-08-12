@@ -53,7 +53,7 @@ class ServerHelper extends PluginBase{
 		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new TestCommand()]);
 		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new MeCommand()]);
         	$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new ShhelpCommand()]);
-		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new NickCommand()]);
+        	$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new NickCommand()]);
         	$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new NickOffCommand()]);
 	}
 }

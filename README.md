@@ -9,7 +9,7 @@ Simple Helper Plugin for Servers!
 
 ### Planned and finshed features:
 - [ ] Commands
-    - [ ] /shhelp
+    - [x] /shhelp
     - [x] /me (for Altay Servers)
     - [x] /heal
     - [x] /fly
@@ -34,8 +34,9 @@ Simple Helper Plugin for Servers!
     - [ ] multilang system
     - [x] Plugin prefix
     - [x] Permission System
-    - [ ] addon Plugin
     - [ ] Config File
+    - [ ] Addon Plugin
+        - [ ] LobbyItems
 - [ ] Fun Addons
     - [ ] Player Size
     - [ ] Vanish
@@ -43,7 +44,9 @@ Simple Helper Plugin for Servers!
     - [ ] Love/MaryAPI
 
 ### Next TODO:
-Add Permissions to Commands(Permission System)
+- Nick command
+- fix bugs
+- lobbyitems addon plugin
 
 ### You want to help us?
 Do it! Yeah were search for Developers of you want to help do it.

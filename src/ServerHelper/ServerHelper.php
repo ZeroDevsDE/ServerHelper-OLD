@@ -10,18 +10,14 @@
 namespace ServerHelper;
 
 use pocketmine\plugin\PluginBase;
-use pocketmine\command\Command;
-use pocketmine\command\CommandSender;
-use pocketmine\plugin\Plugin;
-use pocketmine\plugin\PluginCommand;
 use pocketmine\utils\TextFormat as SH;
-use ServerHelper\CommandBase;
 use ServerHelper\commands\HealCommand;
 use ServerHelper\commands\FeedCommand;
 use ServerHelper\commands\FlyCommand;
 use ServerHelper\commands\BroadcastCommand;
 use ServerHelper\commands\TestCommand;
 use ServerHelper\commands\MeCommand;
+use ServerHelper\commands\ShhelpCommand;
 
 class ServerHelper extends PluginBase{
 	public function onEnable(){
@@ -32,16 +28,17 @@ class ServerHelper extends PluginBase{
 	
 	public function onDisable(){
 		$this->Banner();
-		$this->getLogger()->info($this->prefix . "Server-Helper was stopped!");
+		$this->getLogger()->info("Server-Helper was stopped!");
 	}
 	
 	private function Banner(){
 		$banner = strval(
-		"╔═══╗╔═╗╔═╗╔═══╗╔═╗╔═╗╔═══╗╔═══╗╔═══╗╔════╗╔═══╗".
-		"║╔═╗║║║╚╝║║║╔══╝╚╗╚╝╔╝║╔═╗║║╔══╝║╔═╗║║╔╗╔╗║║╔═╗║".
-		"║╚═╝║║╔╗╔╗║║╚══╗─╚╗╔╝─║╚═╝║║╚══╗║╚═╝║╚╝║║╚╝║╚══╗".
-		"║╔══╝║║║║║║║╔══╝─╔╝╚╗─║╔══╝║╔══╝║╔╗╔╝──║║──╚══╗║".
-		"║║───║║║║║║║╚══╗╔╝╔╗╚╗║║───║╚══╗║║║╚╗──║║──║╚═╝║".
+		"\n".
+        	"╔═══╗╔═╗╔═╗╔═══╗╔═╗╔═╗╔═══╗╔═══╗╔═══╗╔════╗╔═══╗\n".
+		"║╔═╗║║║╚╝║║║╔══╝╚╗╚╝╔╝║╔═╗║║╔══╝║╔═╗║║╔╗╔╗║║╔═╗║\n".
+		"║╚═╝║║╔╗╔╗║║╚══╗─╚╗╔╝─║╚═╝║║╚══╗║╚═╝║╚╝║║╚╝║╚══╗\n".
+		"║╔══╝║║║║║║║╔══╝─╔╝╚╗─║╔══╝║╔══╝║╔╗╔╝──║║──╚══╗║\n".
+		"║║───║║║║║║║╚══╗╔╝╔╗╚╗║║───║╚══╗║║║╚╗──║║──║╚═╝║\n".
 		"╚╝───╚╝╚╝╚╝╚═══╝╚═╝╚═╝╚╝───╚═══╝╚╝╚═╝──╚╝──╚═══╝"
 		);
 		$this->getLogger()->info($banner);
@@ -53,5 +50,6 @@ class ServerHelper extends PluginBase{
 		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new BroadcastCommand()]);
 		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new TestCommand()]);
 		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new MeCommand()]);
+        $this->getServer()->getCommandMap()->registerAll("ServerHelper", [new ShhelpCommand()]);
 	}
 }

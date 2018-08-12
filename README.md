@@ -10,6 +10,7 @@ Simple Helper Plugin for Servers!
 ### Planned and finshed features:
 - [ ] Commands
     - [ ] /shhelp
+    - [x] /me (for Altay Servers)
     - [x] /heal
     - [x] /fly
     - [ ] /ban
@@ -32,7 +33,7 @@ Simple Helper Plugin for Servers!
 - [ ] other functions
     - [ ] multilang system
     - [x] Plugin prefix
-    - [ ] Permission System
+    - [x] Permission System
     - [ ] addon Plugin
     - [ ] Config File
 - [ ] Fun Addons

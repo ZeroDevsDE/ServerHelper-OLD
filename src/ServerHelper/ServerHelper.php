@@ -20,6 +20,8 @@ use ServerHelper\commands\MeCommand;
 use ServerHelper\commands\ShhelpCommand;
 use ServerHelper\commands\NickCommand;
 use ServerHelper\commands\NickOffCommand;
+use ServerHelper\commands\VanishCommand;
+use ServerHelper\commands\VanishOffCommand;
 
 class ServerHelper extends PluginBase{
 	public function onEnable(){
@@ -55,5 +57,7 @@ class ServerHelper extends PluginBase{
         	$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new ShhelpCommand()]);
         	$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new NickCommand()]);
         	$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new NickOffCommand()]);
+		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new VanishCommand()]);
+        	$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new VanishOffCommand()]);
 	}
 }

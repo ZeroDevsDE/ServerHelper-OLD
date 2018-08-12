@@ -31,6 +31,10 @@ class ShhelpCommand extends CommandBase
         $sender->sendMessage(SH::GREEN . "/heal" . SH::GRAY . " » " . SH::WHITE . "heal players");
         $sender->sendMessage(SH::GREEN . "/broadcast" . SH::GRAY . " » " . SH::WHITE . "broadcast your message");
         $sender->sendMessage(SH::GREEN . "/test" . SH::GRAY . " » " . SH::WHITE . "test command | check your ping");
+        $sender->sendMessage(SH::GREEN . "/nickname" . SH::GRAY . " » " . SH::WHITE . "change your nickname");
+        $sender->sendMessage(SH::GREEN . "/nicknameoff" . SH::GRAY . " » " . SH::WHITE . "change your nick to your old name");
+        $sender->sendMessage(SH::GREEN . "/vanish" . SH::GRAY . " » " . SH::WHITE . "makes you invisible");
+        $sender->sendMessage(SH::GREEN . "/vanishoff" . SH::GRAY . " » " . SH::WHITE . "makes you visible");
         $sender->sendMessage(SH::RED . "══════════════════════");
     }
 }

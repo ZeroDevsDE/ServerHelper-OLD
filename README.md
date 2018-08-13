@@ -7,7 +7,7 @@
 ### Description:
 Simple Helper Plugin for Servers!
 
-### Planned and finshed features:
+### Planned and finished features:
 - [ ] Commands
     - [x] /shhelp
     - [x] /gmc

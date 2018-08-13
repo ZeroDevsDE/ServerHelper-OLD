@@ -10,6 +10,10 @@ Simple Helper Plugin for Servers!
 ### Planned and finshed features:
 - [ ] Commands
     - [x] /shhelp
+    - [x] /gmc
+    - [x] /gma
+    - [x] /gmsp
+    - [x] /gma
     - [x] /me (for Altay Servers)
     - [x] /heal
     - [x] /fly
@@ -21,7 +25,7 @@ Simple Helper Plugin for Servers!
     - [ ] /job
     - [ ] /report
     - [x] /nick
-    - [x] /vanish
+    - [x] /vanish 
     - [ ] /size | /playersize
     - [ ] /love
 - [ ] Api's
@@ -44,8 +48,8 @@ Simple Helper Plugin for Servers!
     - [ ] Love/MaryAPI
 
 ### Next TODO:
-- Nick command
-- fix bugs
+- cleanup
+- add other Player command(f.e.: /gmc <Player>)
 - lobbyitems addon plugin
 
 ### You want to help us?

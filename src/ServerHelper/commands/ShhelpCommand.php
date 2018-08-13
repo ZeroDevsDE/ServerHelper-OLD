@@ -35,6 +35,10 @@ class ShhelpCommand extends CommandBase
         $sender->sendMessage(SH::GREEN . "/nicknameoff" . SH::GRAY . " » " . SH::WHITE . "change your nick to your old name");
         $sender->sendMessage(SH::GREEN . "/vanish" . SH::GRAY . " » " . SH::WHITE . "makes you invisible");
         $sender->sendMessage(SH::GREEN . "/vanishoff" . SH::GRAY . " » " . SH::WHITE . "makes you visible");
+        $sender->sendMessage(SH::GREEN . "/gmc" . SH::GRAY . " » " . SH::WHITE . "set your gamemode to Creative");
+        $sender->sendMessage(SH::GREEN . "/gma" . SH::GRAY . " » " . SH::WHITE . "set your gamemode to Surival");
+        $sender->sendMessage(SH::GREEN . "/gma" . SH::GRAY . " » " . SH::WHITE . "set your gamemode to Adventure");
+        $sender->sendMessage(SH::GREEN . "/gmsp" . SH::GRAY . " » " . SH::WHITE . "set your gamemode to Spectator");
         $sender->sendMessage(SH::RED . "══════════════════════");
     }
 }

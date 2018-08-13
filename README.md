@@ -38,6 +38,7 @@ Simple Helper Plugin for Servers!
     - [ ] multilang system
     - [x] Plugin prefix
     - [x] Permission System
+    - [ ] Other Player command(f.e.: /gmc <Player>)
     - [ ] Config File
     - [ ] Addon Plugin
         - [ ] LobbyItems

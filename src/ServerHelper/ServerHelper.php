@@ -22,6 +22,10 @@ use ServerHelper\commands\NickCommand;
 use ServerHelper\commands\NickOffCommand;
 use ServerHelper\commands\VanishCommand;
 use ServerHelper\commands\VanishOffCommand;
+use ServerHelper\commands\GmsCommand;
+use ServerHelper\commands\GmcCommand;
+use ServerHelper\commands\GmaCommand;
+use ServerHelper\commands\GmspCommand;
 
 class ServerHelper extends PluginBase{
 	public function onEnable(){
@@ -59,5 +63,9 @@ class ServerHelper extends PluginBase{
         	$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new NickOffCommand()]);
 		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new VanishCommand()]);
         	$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new VanishOffCommand()]);
+		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new GmsCommand()]);
+		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new GmcCommand()]);
+		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new GmaCommand()]);
+		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new GmspCommand()]);
 	}
 }

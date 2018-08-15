@@ -26,6 +26,8 @@ use ServerHelper\commands\GmsCommand;
 use ServerHelper\commands\GmcCommand;
 use ServerHelper\commands\GmaCommand;
 use ServerHelper\commands\GmspCommand;
+use ServerHelper\commands\DayCommand;
+use ServerHelper\commands\NightCommand;
 
 class ServerHelper extends PluginBase{
 	public function onEnable(){
@@ -58,14 +60,16 @@ class ServerHelper extends PluginBase{
 		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new BroadcastCommand()]);
 		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new TestCommand()]);
 		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new MeCommand()]);
-        	$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new ShhelpCommand()]);
-        	$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new NickCommand()]);
-        	$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new NickOffCommand()]);
+        $this->getServer()->getCommandMap()->registerAll("ServerHelper", [new ShhelpCommand()]);
+        $this->getServer()->getCommandMap()->registerAll("ServerHelper", [new NickCommand()]);
+        $this->getServer()->getCommandMap()->registerAll("ServerHelper", [new NickOffCommand()]);
 		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new VanishCommand()]);
-        	$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new VanishOffCommand()]);
+        $this->getServer()->getCommandMap()->registerAll("ServerHelper", [new VanishOffCommand()]);
 		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new GmsCommand()]);
 		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new GmcCommand()]);
 		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new GmaCommand()]);
 		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new GmspCommand()]);
+		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new DayCommand()]);
+		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new NightCommand()]);
 	}
 }

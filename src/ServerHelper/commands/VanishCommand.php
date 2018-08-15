@@ -39,3 +39,4 @@ class VanishCommand extends CommandBase
             $sender->sendMessage($this->prefix . "This Command is Only for Players!");
         }
     }
+}

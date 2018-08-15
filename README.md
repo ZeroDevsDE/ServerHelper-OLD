@@ -10,10 +10,14 @@ Simple Helper Plugin for Servers!
 ### Planned and finished features:
 - [ ] Commands
     - [x] /shhelp
-    - [x] /gmc
-    - [x] /gma
-    - [x] /gmsp
-    - [x] /gma
+    - [x] Time
+    	- [x] /day
+    	- [x] /night
+    - [x] Gamemode
+		- [x] /gmc
+    	- [x] /gma
+    	- [x] /gmsp
+    	- [x] /gma
     - [x] /me (for Altay Servers)
     - [x] /heal
     - [x] /fly
@@ -52,6 +56,9 @@ Simple Helper Plugin for Servers!
 - cleanup
 - add other Player command(f.e.: /gmc <Player>)
 - lobbyitems addon plugin
+
+# Addon Plugins
+- [LobbyItems-PMExperts](https://github.com/PMExpertsDE/LobbyItems-PMExperts)
 
 ### You want to help us?
 Do it! Yeah were search for Developers of you want to help do it.

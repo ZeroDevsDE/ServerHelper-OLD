@@ -28,6 +28,9 @@ use ServerHelper\commands\GmaCommand;
 use ServerHelper\commands\GmspCommand;
 use ServerHelper\commands\DayCommand;
 use ServerHelper\commands\NightCommand;
+use ServerHelper\commands\ClearAllCommand;
+use ServerHelper\commands\ClearArmorCommand;
+use ServerHelper\commands\ClearItemCommand;
 
 class ServerHelper extends PluginBase{
 	public function onEnable(){
@@ -44,7 +47,7 @@ class ServerHelper extends PluginBase{
 	private function Banner(){
 		$banner = strval(
 		"\n".
-        	"╔═══╗╔═╗╔═╗╔═══╗╔═╗╔═╗╔═══╗╔═══╗╔═══╗╔════╗╔═══╗\n".
+        "╔═══╗╔═╗╔═╗╔═══╗╔═╗╔═╗╔═══╗╔═══╗╔═══╗╔════╗╔═══╗\n".
 		"║╔═╗║║║╚╝║║║╔══╝╚╗╚╝╔╝║╔═╗║║╔══╝║╔═╗║║╔╗╔╗║║╔═╗║\n".
 		"║╚═╝║║╔╗╔╗║║╚══╗─╚╗╔╝─║╚═╝║║╚══╗║╚═╝║╚╝║║╚╝║╚══╗\n".
 		"║╔══╝║║║║║║║╔══╝─╔╝╚╗─║╔══╝║╔══╝║╔╗╔╝──║║──╚══╗║\n".
@@ -71,5 +74,8 @@ class ServerHelper extends PluginBase{
 		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new GmspCommand()]);
 		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new DayCommand()]);
 		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new NightCommand()]);
+		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new ClearAllCommand()]);
+		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new ClearArmorCommand()]);
+		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new ClearItemCommand()]);
 	}
 }

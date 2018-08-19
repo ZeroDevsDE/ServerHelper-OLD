@@ -39,6 +39,11 @@ class ShhelpCommand extends CommandBase
         $sender->sendMessage(SH::GREEN . "/gma" . SH::GRAY . " » " . SH::WHITE . "set your gamemode to Surival");
         $sender->sendMessage(SH::GREEN . "/gma" . SH::GRAY . " » " . SH::WHITE . "set your gamemode to Adventure");
         $sender->sendMessage(SH::GREEN . "/gmsp" . SH::GRAY . " » " . SH::WHITE . "set your gamemode to Spectator");
+        $sender->sendMessage(SH::GREEN . "/day" . SH::GRAY . " » " . SH::WHITE . "set world time to day");
+        $sender->sendMessage(SH::GREEN . "/night" . SH::GRAY . " » " . SH::WHITE . "set world time to night");
+        $sender->sendMessage(SH::GREEN . "/clear" . SH::GRAY . " » " . SH::WHITE . "cleares your Inventory");
+        $sender->sendMessage(SH::GREEN . "/cleararmor" . SH::GRAY . " » " . SH::WHITE . "cleares only your Armor Inventory");
+        $sender->sendMessage(SH::GREEN . "/clearitem" . SH::GRAY . " » " . SH::WHITE . "cleares only your ItemInventory");
         $sender->sendMessage(SH::RED . "══════════════════════");
     }
 }

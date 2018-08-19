@@ -10,6 +10,8 @@ Simple Helper Plugin for Servers!
 ### Planned and finished features:
 - [ ] Commands
     - [x] /shhelp
+    - [ ] /changelog
+    - [ ] /about
     - [x] Time
     	- [x] /day
     	- [x] /night
@@ -20,10 +22,9 @@ Simple Helper Plugin for Servers!
     	- [x] /gmsp
     	- [x] /gma
     - [ ] Inventory Commands
-    	- [ ] /clearall
-    	- [ ] /cleararmor
-    	- [ ] /clearinv
-    	- [ ] /clearoffhand
+    	- [x] /clearall(for PMMP Servers)
+    	- [x] /cleararmor
+    	- [x] /clearinv(only ItemInventory)
     	- [ ] /i(like /give command)
     	- [ ] /in(item ID)
     - [x] /me (for Altay Servers)

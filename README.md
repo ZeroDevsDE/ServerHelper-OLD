@@ -13,52 +13,59 @@ Simple Helper Plugin for Servers!
     - [x] Time
     	- [x] /day
     	- [x] /night
+    	- [ ] /tstop(stop time)
     - [x] Gamemode
 		- [x] /gmc
     	- [x] /gma
     	- [x] /gmsp
     	- [x] /gma
+    - [ ] Inventory Commands
+    	- [ ] /clearall
+    	- [ ] /cleararmor
+    	- [ ] /clearinv
+    	- [ ] /clearoffhand
+    	- [ ] /i(like /give command)
+    	- [ ] /in(item ID)
     - [x] /me (for Altay Servers)
     - [x] /heal
     - [x] /fly
-    - [ ] /ban
     - [x] /feed
     - [ ] /tphere
     - [x] /test
     - [x] /broadcast
-    - [ ] /job
-    - [ ] /report
     - [x] /nick
     - [x] /vanish 
     - [ ] /size | /playersize
-    - [ ] /love
 - [ ] Api's
     - [ ] BanAPI
-    - [ ] JobAPI
     - [ ] TeleportAPI
-    - [ ] ReportAPI
-    - [ ] Love/MaryAPI
 - [ ] other functions
     - [ ] multilang system
     - [x] Plugin prefix
     - [x] Permission System
     - [ ] Other Player command(f.e.: /gmc <Player>)
     - [ ] Config File
-    - [ ] Addon Plugin
-        - [ ] LobbyItems
+    - [ ] Addon Plugins
+        - [x] LobbyItems
+        - [ ] Report
+        - [ ] Love
+        - [ ] Job
+    - [ ] Game Plugins
+    	- [ ] SoupFFA
+    	- [ ] KnockBackFFA(KnockIt)
 - [ ] Fun Addons
     - [ ] Player Size
-    - [ ] Vanish
-    - [ ] NickNames
-    - [ ] Love/MaryAPI
+    - [x] Vanish
+    - [x] NickNames(/nick <nickname>
 
 ### Next TODO:
-- cleanup
 - add other Player command(f.e.: /gmc <Player>)
+- add more Commands
 - lobbyitems addon plugin
 
 # Addon Plugins
 - [LobbyItems-PMExperts](https://github.com/PMExpertsDE/LobbyItems-PMExperts)
+- [MeCommand(for Altay Servers](https://github.com/PMExpertsDE/MeCommand)
 
 ### You want to help us?
 Do it! Yeah were search for Developers of you want to help do it.

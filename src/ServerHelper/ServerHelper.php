@@ -31,6 +31,7 @@ use ServerHelper\commands\NightCommand;
 use ServerHelper\commands\ClearAllCommand;
 use ServerHelper\commands\ClearArmorCommand;
 use ServerHelper\commands\ClearItemCommand;
+use ServerHelper\commands\ItemNumCommand;
 
 class ServerHelper extends PluginBase{
 	public function onEnable(){
@@ -77,5 +78,6 @@ class ServerHelper extends PluginBase{
 		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new ClearAllCommand()]);
 		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new ClearArmorCommand()]);
 		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new ClearItemCommand()]);
+		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new ItemNumCommand()]);
 	}
 }

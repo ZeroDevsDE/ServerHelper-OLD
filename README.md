@@ -38,7 +38,6 @@ Simple Helper Plugin for Servers!
     - [x] /vanish 
     - [ ] /size | /playersize
 - [ ] Api's
-    - [ ] BanAPI
     - [ ] TeleportAPI
 - [ ] other functions
     - [ ] multilang system
@@ -52,7 +51,7 @@ Simple Helper Plugin for Servers!
         - [ ] Love
         - [ ] Job
     - [ ] Game Plugins
-    	- [ ] SoupFFA
+    	- [x] SoupFFA
     	- [ ] KnockBackFFA(KnockIt)
 - [ ] Fun Addons
     - [ ] Player Size

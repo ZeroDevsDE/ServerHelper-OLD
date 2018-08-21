@@ -37,7 +37,7 @@ class ServerHelper extends PluginBase{
 	public function onEnable(){
 		$this->Banner();
 		$this->CommandLoader();
-		$this->getLogger()->info(SH::GOLD . "Server-Helper was activated!");
+		$this->getLogger()->info(SH::GREEN . "Server-Helper was activated!");
 	}
 	
 	public function onDisable(){

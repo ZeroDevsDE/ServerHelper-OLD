@@ -45,7 +45,8 @@ class ShhelpCommand extends CommandBase
         	$sender->sendMessage(SH::GREEN . "/c" . SH::GRAY . " » " . SH::WHITE . "cleares your Inventory");
         	$sender->sendMessage(SH::GREEN . "/ca" . SH::GRAY . " » " . SH::WHITE . "cleares only your Armor Inventory");
         	$sender->sendMessage(SH::GREEN . "/ci" . SH::GRAY . " » " . SH::WHITE . "cleares only your ItemInventory");
-        	$sender->sendMessage(SH::GREEN . "/in" . SH::GRAY . " » " . SH::WHITE . "gets the id of the item in your hand!");
+        	$sender->sendMessage(SH::GREEN . "/in" . SH::GRAY . " » " . SH::WHITE . "gets the id of the item in your hand");
+        	$sender->sendMessage(SH::GREEN . "/tstop" . SH::GRAY . " » " . SH::WHITE . "stop time in your world");
         }else{
         	$sender->sendMessage(SH::GRAY . "Command List" . SH::GREEN . " ServerHelper");
         	$sender->sendMessage(SH::GRAY . "You want to see all Aliasses? do /shh <alias>");
@@ -69,7 +70,8 @@ class ShhelpCommand extends CommandBase
         	$sender->sendMessage(SH::GREEN . "/clear" . SH::GRAY . " » " . SH::WHITE . "cleares your Inventory");
         	$sender->sendMessage(SH::GREEN . "/cleararmor" . SH::GRAY . " » " . SH::WHITE . "cleares only your Armor Inventory");
         	$sender->sendMessage(SH::GREEN . "/clearitem" . SH::GRAY . " » " . SH::WHITE . "cleares only your ItemInventory");
-        	$sender->sendMessage(SH::GREEN . "/itemid" . SH::GRAY . " » " . SH::WHITE . "gets the id of the item in your hand!");
+        	$sender->sendMessage(SH::GREEN . "/itemid" . SH::GRAY . " » " . SH::WHITE . "gets the id of the item in your hand");
+        	$sender->sendMessage(SH::GREEN . "/tstop" . SH::GRAY . " » " . SH::WHITE . "stop time in your world");
         }
     }
 }

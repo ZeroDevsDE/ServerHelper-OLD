@@ -15,7 +15,7 @@ Simple Helper Plugin for Servers!
     - [x] Time
     	- [x] /day
     	- [x] /night
-    	- [ ] /tstop(stop time)
+    	- [x] /tstop(stop time)
     - [x] Gamemode
 		- [x] /gmc
     	- [x] /gma

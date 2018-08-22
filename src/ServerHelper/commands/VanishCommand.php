@@ -18,7 +18,7 @@ use pocketmine\entity\EffectInstance;
 
 class VanishCommand extends CommandBase
 {
-    public $prefix = SH::GRAY . "» " . SH::AQUA . "S-H" . SH::GRAY . " » ";
+    public $prefix = SH::GRAY . "» " . SH::AQUA . "SH" . SH::GRAY . " » ";
 
     public function __construct()
     {

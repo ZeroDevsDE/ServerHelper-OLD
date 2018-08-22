@@ -18,7 +18,7 @@ class BroadcastCommand extends CommandBase
 {
 	
 	public $bcprefix = SH::GRAY . "» " . SH::AQUA . SH::BOLD . "Broadcast". SH::RESET . SH::GRAY . " » ";
-	public $prefix = SH::GRAY . "» " . SH::AQUA . "S-H" . SH::GRAY . " » ";
+	public $prefix = SH::GRAY . "» " . SH::AQUA . "SH" . SH::GRAY . " » ";
 	
    public function __construct() 
    {

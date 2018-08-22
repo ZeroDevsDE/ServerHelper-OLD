@@ -18,7 +18,7 @@ Simple Helper Plugin for Servers!
     	- [x] /tstop(stop time)
     - [x] Gamemode
 		- [x] /gmc
-    	- [x] /gma
+    	- [x] /gms
     	- [x] /gmsp
     	- [x] /gma
     - [ ] Inventory Commands

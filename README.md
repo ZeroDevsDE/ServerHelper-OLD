@@ -11,7 +11,7 @@ Simple Helper Plugin for Servers!
 - [ ] Commands
     - [x] /shhelp
     - [ ] /changelog
-    - [ ] /about
+    - [x] /about
     - [x] Time
     	- [x] /day
     	- [x] /night
@@ -25,8 +25,7 @@ Simple Helper Plugin for Servers!
     	- [x] /clearall(for PMMP Servers)
     	- [x] /cleararmor
     	- [x] /clearinv(only ItemInventory)
-    	- [ ] /i(like /give command)
-    	- [ ] /in(item ID)
+    	- [ ] /itemid
     - [x] /me (for Altay Servers)
     - [x] /heal
     - [x] /fly
@@ -40,7 +39,8 @@ Simple Helper Plugin for Servers!
 - [ ] Api's
     - [ ] TeleportAPI
 - [ ] other functions
-    - [ ] multilang system
+	- [ ] UI's
+    - [ ] multilang system(?)
     - [x] Plugin prefix
     - [x] Permission System
     - [ ] Other Player command(f.e.: /gmc <Player>)
@@ -61,7 +61,7 @@ Simple Helper Plugin for Servers!
 ### Next TODO:
 - add other Player command(f.e.: /gmc <Player>)
 - add more Commands
-- lobbyitems addon plugin
+- add UI's
 
 # Addon Plugins
 - [LobbyItems-PMExperts](https://github.com/PMExpertsDE/LobbyItems-PMExperts)

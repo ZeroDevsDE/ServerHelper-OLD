@@ -72,6 +72,7 @@ class ShhelpCommand extends CommandBase
         	$sender->sendMessage(SH::GREEN . "/clearitem" . SH::GRAY . " » " . SH::WHITE . "cleares only your ItemInventory");
         	$sender->sendMessage(SH::GREEN . "/itemid" . SH::GRAY . " » " . SH::WHITE . "gets the id of the item in your hand");
         	$sender->sendMessage(SH::GREEN . "/tstop" . SH::GRAY . " » " . SH::WHITE . "stop time in your world");
+        	$sender->sendMessage(SH::GREEN . "/aboutsh" . SH::GRAY . " » " . SH::WHITE . "about ServerHelper");
         }
     }
 }

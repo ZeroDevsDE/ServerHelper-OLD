@@ -34,6 +34,7 @@ use ServerHelper\commands\ClearItemCommand;
 use ServerHelper\commands\ItemNumCommand;
 use ServerHelper\commands\TimeStopCommand;
 use ServerHelper\commands\AboutCommand;
+use ServerHelper\commands\ChangelogCommand;
 
 class ServerHelper extends PluginBase{
 	public function onEnable(){
@@ -43,7 +44,6 @@ class ServerHelper extends PluginBase{
 	}
 	
 	public function onDisable(){
-		$this->saveResource("Config.yml");
 		$this->Banner();
 		$this->getLogger()->info("Server-Helper was stopped!");
 	}
@@ -84,5 +84,6 @@ class ServerHelper extends PluginBase{
 		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new ItemNumCommand()]);
 		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new TimeStopCommand()]);
 		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new AboutCommand()]);
+		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new ChangelogCommand()]);
 	}
 }

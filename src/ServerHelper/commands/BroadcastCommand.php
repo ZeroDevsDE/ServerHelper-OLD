@@ -11,7 +11,7 @@ namespace ServerHelper\commands;
 
 use ServerHelper\CommandBase;
 use pocketmine\command\CommandSender;
-usw pocketmine\command\ConsoleCommandSender;
+use pocketmine\command\ConsoleCommandSender;
 use pocketmine\utils\TextFormat as SH;
 use pocketmine\Player;
 

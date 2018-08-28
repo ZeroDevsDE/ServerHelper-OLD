@@ -13,7 +13,6 @@ use ServerHelper\CommandBase;
 use pocketmine\command\CommandSender;
 use pocketmine\utils\TextFormat as SH;
 use pocketmine\Player;
-use pocketmine\Server;
 
 class DayCommand extends CommandBase
 {

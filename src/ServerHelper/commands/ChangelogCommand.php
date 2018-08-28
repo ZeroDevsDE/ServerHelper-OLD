@@ -9,13 +9,10 @@
 
 namespace ServerHelper\commands;
 
-use ServerHelper\ServerHelper;
 use ServerHelper\CommandBase;
-use pocketmine\plugin\PluginCommand;
 use pocketmine\command\CommandSender;
 use pocketmine\command\ConsoleCommandSender;
 use pocketmine\utils\TextFormat as SH;
-use pocketmine\Player;
 
 class ChangelogCommand extends CommandBase
 {

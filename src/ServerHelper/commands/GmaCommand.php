@@ -9,13 +9,9 @@
 
 namespace ServerHelper\commands;
 
-use ServerHelper\ServerHelper;
 use ServerHelper\CommandBase;
-use pocketmine\plugin\PluginCommand;
-use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\utils\TextFormat as SH;
-use pocketmine\Server;
 use pocketmine\Player;
 
 class GmaCommand extends CommandBase

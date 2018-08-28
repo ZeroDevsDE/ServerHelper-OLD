@@ -35,6 +35,7 @@ use ServerHelper\commands\ItemNumCommand;
 use ServerHelper\commands\TimeStopCommand;
 use ServerHelper\commands\AboutCommand;
 use ServerHelper\commands\ChangelogCommand;
+use ServerHelper\player\PlayerSize;
 
 class ServerHelper extends PluginBase{
 	public function onEnable(){
@@ -85,5 +86,6 @@ class ServerHelper extends PluginBase{
 		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new TimeStopCommand()]);
 		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new AboutCommand()]);
 		$this->getServer()->getCommandMap()->registerAll("ServerHelper", [new ChangelogCommand()]);
+        $this->getServer()->getCommandMap()->registerAll("ServerHelper", [new PlayerSize()]);
 	}
 }

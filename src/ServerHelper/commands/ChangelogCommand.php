@@ -27,9 +27,8 @@ class ChangelogCommand extends CommandBase
 		$sender->sendMessage($this->prefix . "Latest Build:");
 		$sender->sendMessage(SH::GREEN . "Build Number: " . SH::RESET  ."2.1.3b");
 		$sender->sendMessage(SH::GREEN . "Changes:");
-		$sender->sendMessage("- Fixed MeCommmand");
-		$sender->sendMessage("- New ChangelogCommand");
-		$sender->sendMessage("- Fixed ConsoleCommand");
+		$sender->sendMessage("- added /playersize command");
+		$sender->sendMessage("- removed unused code");
 		$sender->sendMessage("Github: https://github.com/pmexpertsde");
 	}
 }

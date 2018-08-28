@@ -33,8 +33,8 @@ class ShhelpCommand extends CommandBase
         	$sender->sendMessage(SH::GREEN . "/bc" . SH::GRAY . " » " . SH::WHITE . "broadcast your message");
         	$sender->sendMessage(SH::GREEN . "/t" . SH::GRAY . " » " . SH::WHITE . "test command | check your ping");
         	$sender->sendMessage(SH::GREEN . "/nick" . SH::GRAY . " » " . SH::WHITE . "change your nickname");
-       	 $sender->sendMessage(SH::GREEN . "/nickoff" . SH::GRAY . " » " . SH::WHITE . "change your nick to your old name");
-     	   $sender->sendMessage(SH::GREEN . "/v" . SH::GRAY . " » " . SH::WHITE . "makes you invisible");
+       	    $sender->sendMessage(SH::GREEN . "/nickoff" . SH::GRAY . " » " . SH::WHITE . "change your nick to your old name");
+       	    $sender->sendMessage(SH::GREEN . "/v" . SH::GRAY . " » " . SH::WHITE . "makes you invisible");
         	$sender->sendMessage(SH::GREEN . "/voff" . SH::GRAY . " » " . SH::WHITE . "makes you visible");
         	$sender->sendMessage(SH::GREEN . "/gmc" . SH::GRAY . " » " . SH::WHITE . "set your gamemode to Creative");
         	$sender->sendMessage(SH::GREEN . "/gma" . SH::GRAY . " » " . SH::WHITE . "set your gamemode to Surival");
@@ -47,6 +47,7 @@ class ShhelpCommand extends CommandBase
         	$sender->sendMessage(SH::GREEN . "/ci" . SH::GRAY . " » " . SH::WHITE . "cleares only your ItemInventory");
         	$sender->sendMessage(SH::GREEN . "/in" . SH::GRAY . " » " . SH::WHITE . "gets the id of the item in your hand");
         	$sender->sendMessage(SH::GREEN . "/tstop" . SH::GRAY . " » " . SH::WHITE . "stop time in your world");
+            $sender->sendMessage(SH::GREEN . "/size" . SH::GRAY . " » " . SH::WHITE . "changes your playersize");
         }else{
         	$sender->sendMessage(SH::GRAY . "Command List" . SH::GREEN . " ServerHelper");
         	$sender->sendMessage(SH::GRAY . "You want to see all Aliasses? do /shh <alias>");
@@ -58,8 +59,8 @@ class ShhelpCommand extends CommandBase
         	$sender->sendMessage(SH::GREEN . "/broadcast" . SH::GRAY . " » " . SH::WHITE . "broadcast your message");
         	$sender->sendMessage(SH::GREEN . "/test" . SH::GRAY . " » " . SH::WHITE . "test command | check your ping");
         	$sender->sendMessage(SH::GREEN . "/nickname" . SH::GRAY . " » " . SH::WHITE . "change your nickname");
-       	 $sender->sendMessage(SH::GREEN . "/nicknameoff" . SH::GRAY . " » " . SH::WHITE . "change your nick to your old name");
-     	   $sender->sendMessage(SH::GREEN . "/vanish" . SH::GRAY . " » " . SH::WHITE . "makes you invisible");
+       	    $sender->sendMessage(SH::GREEN . "/nicknameoff" . SH::GRAY . " » " . SH::WHITE . "change your nick to your old name");
+     	    $sender->sendMessage(SH::GREEN . "/vanish" . SH::GRAY . " » " . SH::WHITE . "makes you invisible");
         	$sender->sendMessage(SH::GREEN . "/vanishoff" . SH::GRAY . " » " . SH::WHITE . "makes you visible");
         	$sender->sendMessage(SH::GREEN . "/gmc" . SH::GRAY . " » " . SH::WHITE . "set your gamemode to Creative");
         	$sender->sendMessage(SH::GREEN . "/gma" . SH::GRAY . " » " . SH::WHITE . "set your gamemode to Surival");
@@ -73,6 +74,7 @@ class ShhelpCommand extends CommandBase
         	$sender->sendMessage(SH::GREEN . "/itemid" . SH::GRAY . " » " . SH::WHITE . "gets the id of the item in your hand");
         	$sender->sendMessage(SH::GREEN . "/tstop" . SH::GRAY . " » " . SH::WHITE . "stop time in your world");
         	$sender->sendMessage(SH::GREEN . "/aboutsh" . SH::GRAY . " » " . SH::WHITE . "about ServerHelper");
+            $sender->sendMessage(SH::GREEN . "/playersize" . SH::GRAY . " » " . SH::WHITE . "changes your playersize");
         }
     }
 }

@@ -10,7 +10,7 @@ Simple Helper Plugin for Servers!
 ### Planned and finished features:
 - [ ] Commands
     - [x] /shhelp
-    - [ ] /changelog
+    - [x] /changelog
     - [x] /about
     - [x] Time
     	- [x] /day
@@ -25,7 +25,7 @@ Simple Helper Plugin for Servers!
     	- [x] /clearall(for PMMP Servers)
     	- [x] /cleararmor
     	- [x] /clearinv(only ItemInventory)
-    	- [ ] /itemid
+    	- [x] /itemid
     - [x] /me (for Altay Servers)
     - [x] /heal
     - [x] /fly
@@ -35,7 +35,7 @@ Simple Helper Plugin for Servers!
     - [x] /broadcast
     - [x] /nick
     - [x] /vanish 
-    - [ ] /size | /playersize
+    - [x] /size | /playersize
 - [ ] Api's
     - [ ] TeleportAPI
 - [ ] other functions
@@ -54,13 +54,12 @@ Simple Helper Plugin for Servers!
     	- [x] SoupFFA
     	- [ ] KnockBackFFA(KnockIt)
 - [ ] Fun Addons
-    - [ ] Player Size
+    - [x] Player Size
     - [x] Vanish
     - [x] NickNames(/nick <nickname>
 
 ### Next TODO:
 - add other Player command(f.e.: /gmc <Player>)
-- add more Commands
 - add UI's
 
 # Addon Plugins

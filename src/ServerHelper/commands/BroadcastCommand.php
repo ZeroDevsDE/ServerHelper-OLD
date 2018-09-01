@@ -30,7 +30,7 @@ class BroadcastCommand extends CommandBase
    	if($sender instanceof Player){
 			if($sender->hasPermission("serverhelper.command.broadcast")){
 				if(!empty($args[0])){
-   				$sender->getServer()->broadcastMessage($this->bcprefix . $args[0]);
+   				$sender->getServer()->broadcastMessage($this->bcprefix . implode(" ", $args));
    			}else{
 					$sender->sendMessage($this->prefix . "Usage: /broadcast <message>");
 				}

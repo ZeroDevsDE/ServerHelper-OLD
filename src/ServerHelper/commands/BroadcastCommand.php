@@ -13,7 +13,6 @@ use ServerHelper\CommandBase;
 use pocketmine\command\CommandSender;
 use pocketmine\command\ConsoleCommandSender;
 use pocketmine\utils\TextFormat as SH;
-use pocketmine\Player;
 
 class BroadcastCommand extends CommandBase
 {
@@ -27,18 +26,15 @@ class BroadcastCommand extends CommandBase
    }
    public function execute(CommandSender $sender, string $commandLabel, array $args)
    {
-   	if($sender instanceof Player){
-			if($sender->hasPermission("serverhelper.command.broadcast")){
-				if(!empty($args[0])){
-   				$sender->getServer()->broadcastMessage($this->bcprefix . implode(" ", $args));
-   			}else{
-					$sender->sendMessage($this->prefix . "Usage: /broadcast <message>");
-				}
-			}else{
-				$sender->sendMessage($this->prefix . "You dont have the Permission to use this Command!");
-			}
-	  	}else{
-			$sender->sendMessage($this->prefix . "This Command is Only for Players!");
-		}
+       if($sender->hasPermission("serverhelper.command.broadcast")){
+           if(!empty($args[0])){
+               $sender->getServer()->broadcastMessage($this->bcprefix . implode(" ", $args));
+           }else{
+               $sender->sendMessage($this->prefix . "Usage: /broadcast <message>");
+           }
+       }else{
+           $sender->sendMessage($this->prefix . "You dont have the Permission to use this Command!");
+       }
+
 	}
 }

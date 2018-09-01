@@ -27,8 +27,8 @@ class NickCommand extends CommandBase
         if($sender instanceof Player){
             if($sender->hasPermission("serverhelper.command.nick")){
                 if(!empty($args[0])){
-                    $sender->setDisplayName($args[0]);
-                    $sender->setNameTag($args[0]);
+                    $sender->setDisplayName(implode(" ", $args));
+                    $sender->setNameTag(implode(" ", $args));
                     $sender->sendMessage($this->prefix . "Your Nickname was set to " . SH::GREEN . $args[0] . SH::GRAY . "!");
                 }else{
                     $sender->sendMessage($this->prefix . "Usage: /nick <nickname>");

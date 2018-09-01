@@ -21,7 +21,7 @@ Simple Helper Plugin for Servers!
     	- [x] /gms
     	- [x] /gmsp
     	- [x] /gma
-    - [ ] Inventory Commands
+    - [x] Inventory Commands
     	- [x] /clearall(for PMMP Servers)
     	- [x] /cleararmor
     	- [x] /clearinv(only ItemInventory)
@@ -44,7 +44,7 @@ Simple Helper Plugin for Servers!
     - [x] Plugin prefix
     - [x] Permission System
     - [ ] Other Player command(f.e.: /gmc <Player>)
-    - [ ] Config File
+    - [ ] Config File(?)
     - [ ] Addon Plugins
         - [x] LobbyItems
         - [ ] Report
@@ -64,7 +64,8 @@ Simple Helper Plugin for Servers!
 
 # Addon Plugins
 - [LobbyItems-PMExperts](https://github.com/PMExpertsDE/LobbyItems-PMExperts)
-- [MeCommand(for Altay Servers](https://github.com/PMExpertsDE/MeCommand)
+- [MeCommand(for Altay Servers)](https://github.com/PMExpertsDE/MeCommand)
+- [SmallPlugins](https://github.com/pmexpertsde/SmallPlugins)
 
 ### You want to help us?
 Do it! Yeah were search for Developers of you want to help do it.

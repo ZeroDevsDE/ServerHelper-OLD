@@ -11,3 +11,52 @@ author: PMExperts
 
 #PMExperts
 #TuranicTeam
+
+commands:
+  aboutsh:
+    description: "about ServerHelper"
+  changelogsh:
+    description: "changes of ServerHelper"
+  broadcast:
+    description: "broadcast your message to all Players"
+    aliases: [bc]
+  clear:
+    desription: "clear inventory"
+    aliases: [c]
+  cleararmor:
+    description: "clear armor inventory"
+    aliases: [ca]
+  day:
+    description: "set time to day"
+  night:
+    description: "set time to night"
+  feed:
+    description: "fed player"
+  fly:
+    description: "enable fly for players"
+  gma:
+    description: "set gamemode to adventure"
+  gmc:
+    desctiption: "set gamemode to creative"
+  gms:
+    description: "set gamemode to survival"
+  gmsp:
+    descritpion: "set gamemode to spectator"
+  heal:
+    description: "heal player to max hearts"
+  itemid:
+    description: "get item ID of item in your hand"
+  nickname:
+    description: "changes players nickname"
+    usage: "/nickname <player> <nickname>"
+    aliases: [nick]
+  test:
+    description: "test players ping"
+  tstop:
+    description: "stop time in your world"
+  shhelp:
+    description: "get all commands of ServerHelper"
+    aliases: [shh]
+  vanish:
+    description: "hide you from players"
+    aliases: [v]

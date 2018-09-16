@@ -85,6 +85,9 @@ commands:
     description: "change your skin size"
     aliases: [size]
     usage: "/playersize <player>"
+  tphere:
+    description: "teleport player to you"
+    usage: "/tphere <player>"
 
 permissions:
   serverhelper.*:

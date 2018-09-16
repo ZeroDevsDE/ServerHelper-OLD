@@ -16,6 +16,7 @@ Simple Helper Plugin for Servers!
     	- [x] /day
     	- [x] /night
     	- [x] /tstop(stop time)
+    	- [ ] /votetime
     - [x] Gamemode
 		- [x] /gmc
     	- [x] /gms
@@ -29,21 +30,23 @@ Simple Helper Plugin for Servers!
     - [x] /heal
     - [x] /fly
     - [x] /feed
-    - [ ] /tphere
+    - [x] /tphere
     - [x] /test
     - [x] /broadcast
     - [x] /nick
     - [x] /vanish 
     - [x] /size | /playersize
+    - [ ] /near
 - [ ] Api's
-    - [ ] TeleportAPI
+    - [x] TeleportAPI
+    - [ ] BanAPI
 - [ ] other functions
 	- [ ] UI's/Hotbar
     - [ ] multilang system(?)
     - [x] Plugin prefix
     - [x] Permission System
     - [x] Other Player command(f.e.: /gmc <Player>)
-    - [ ] Config File(?)
+    - [x] Config File
     - [ ] Addon Plugins
         - [x] LobbyItems
         - [ ] Report
@@ -59,8 +62,7 @@ Simple Helper Plugin for Servers!
 
 ### Next TODO:
 - multilang
-- add tphere command
-- config(me, prefix, messages...)
+- hotbar change
 # Addon Plugins
 - [LobbyItems-PMExperts](https://github.com/PMExpertsDE/LobbyItems-PMExperts)
 - [MeCommand(for Altay Servers)](https://github.com/PMExpertsDE/MeCommand)

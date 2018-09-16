@@ -1,0 +1,70 @@
+PERMISSIONS LIST SERVERHELPER
+
+permissions:
+  serverhelper.*:
+    default: op
+    description: "Full access to ServerHelper"
+    children:
+      serverhelper.command.about:
+        default: true
+        description: "use about command"
+      serverhelper.command.changelog:
+        default: true
+        description: "use changelog command"
+      serverhelper.command.broadcast:
+        default: op
+        description: "broadcast command"
+      serverhelper.command.clear:
+        default: op
+        description: "clear command"
+      serverhelper.command.cleararmor:
+        default: op
+        description: "clear armor command"
+      serverhelper.command.day:
+        default: op
+        description: "day command"
+      serverhelper.command.night:
+        default: op
+        description: "night command"
+      serverhelper.command.feed:
+        default: op
+        description: "feed command"
+      serverhelper.command.fly:
+        default: op
+        description: "fly command"
+      serverhelper.command.gmc:
+        default: op
+        description: "gmc command"
+      serverhelper.command.gma:
+        default: op
+        description: "gma command"
+      serverhelper.command.gms:
+        default: op
+        description: "gms command"
+      serverhelper.command.gmsp:
+        default: op
+        description: "gmsp command"
+      serverhelper.command.heal:
+        default: op
+        description: "heal command"
+      serverhelper.command.itemid:
+        default: op
+        description: "itemid command"
+      serverhelper.command.nickname:
+        default: op
+        description: "nickname command"
+      serverhelper.command.test:
+        default: true
+        description: "test/ping command"
+      serverhelper.command.tstop:
+        default: op
+        description: "tstop command"
+      serverhelper.command.playersize:
+        default: op
+        description: "playersize command"
+      serverhelper.command.vanish:
+        default: op
+        description: "vanish command"
+      serverhelper.command.shhelp:
+        default: true
+        description: "serverhelper command list"

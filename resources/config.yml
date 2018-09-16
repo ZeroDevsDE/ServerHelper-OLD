@@ -1,0 +1,20 @@
+#╔═══╗╔═╗╔═╗╔═══╗╔═╗╔═╗╔═══╗╔═══╗╔═══╗╔════╗╔═══╗
+#║╔═╗║║║╚╝║║║╔══╝╚╗╚╝╔╝║╔═╗║║╔══╝║╔═╗║║╔╗╔╗║║╔═╗║
+#║╚═╝║║╔╗╔╗║║╚══╗─╚╗╔╝─║╚═╝║║╚══╗║╚═╝║╚╝║║╚╝║╚══╗
+#║╔══╝║║║║║║║╔══╝─╔╝╚╗─║╔══╝║╔══╝║╔╗╔╝──║║──╚══╗║
+#║║───║║║║║║║╚══╗╔╝╔╗╚╗║║───║╚══╗║║║╚╗──║║──║╚═╝║
+#╚╝───╚╝╚╝╚╝╚═══╝╚═╝╚═╝╚╝───╚═══╝╚╝╚═╝──╚╝──╚═══╝
+#
+
+#PLEASE DO NOT CHANGE THIS!!!
+VERSION: 2.3.2[b]
+
+#Prefix of ServerHelper
+#Standard: §7» §bSH §7»
+PluginPrefix: "§7» §bSH §7» "
+
+#Prefix of Broadcast Command
+#Standard: §7» §l§bBroadcast §r§7»
+BroadcastPrefix: "§7» §l§bBroadcast §r§7» "
+
+#SOON: Language and other

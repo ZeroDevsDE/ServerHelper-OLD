@@ -68,3 +68,6 @@ permissions:
       serverhelper.command.shhelp:
         default: true
         description: "serverhelper command list"
+      serverhelper.command.shhelp:
+        default: true
+        description: "serverhelper command list"

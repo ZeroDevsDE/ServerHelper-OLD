@@ -1,4 +1,4 @@
-# Server-Helper
+# Server-Helper - NEWAPI
 ---
 | Discord |
 | :-----: |
@@ -22,11 +22,10 @@ Simple Helper Plugin for Servers!
     	- [x] /gmsp
     	- [x] /gma
     - [x] Inventory Commands
-    	- [x] /clearall(for PMMP Servers)
+    	- [x] /clear(for PMMP Servers)
     	- [x] /cleararmor
-    	- [x] /clearinv(only ItemInventory)
     	- [x] /itemid
-    - [x] /me (for Altay Servers)
+    - [x] [/me](https://github.com/PMExpertsDE/MeCommand)
     - [x] /heal
     - [x] /fly
     - [x] /feed
@@ -39,11 +38,11 @@ Simple Helper Plugin for Servers!
 - [ ] Api's
     - [ ] TeleportAPI
 - [ ] other functions
-	- [ ] UI's
+	- [ ] UI's/Hotbar
     - [ ] multilang system(?)
     - [x] Plugin prefix
     - [x] Permission System
-    - [ ] Other Player command(f.e.: /gmc <Player>)
+    - [x] Other Player command(f.e.: /gmc <Player>)
     - [ ] Config File(?)
     - [ ] Addon Plugins
         - [x] LobbyItems
@@ -59,13 +58,14 @@ Simple Helper Plugin for Servers!
     - [x] NickNames(/nick <nickname>
 
 ### Next TODO:
-- add other Player command(f.e.: /gmc <Player>)
-- add UI's
-
+- multilang
+- add tphere command
+- config(me, prefix, messages...)
 # Addon Plugins
 - [LobbyItems-PMExperts](https://github.com/PMExpertsDE/LobbyItems-PMExperts)
 - [MeCommand(for Altay Servers)](https://github.com/PMExpertsDE/MeCommand)
 - [SmallPlugins](https://github.com/pmexpertsde/SmallPlugins)
+- [SoupFFA](https://github.com/pmexpertsde/soupffa)
 
 ### You want to help us?
 Do it! Yeah were search for Developers of you want to help do it.

@@ -1,5 +1,14 @@
 <?php
 
+#╔═══╗╔═╗╔═╗╔═══╗╔═╗╔═╗╔═══╗╔═══╗╔═══╗╔════╗╔═══╗
+#║╔═╗║║║╚╝║║║╔══╝╚╗╚╝╔╝║╔═╗║║╔══╝║╔═╗║║╔╗╔╗║║╔═╗║
+#║╚═╝║║╔╗╔╗║║╚══╗─╚╗╔╝─║╚═╝║║╚══╗║╚═╝║╚╝║║╚╝║╚══╗
+#║╔══╝║║║║║║║╔══╝─╔╝╚╗─║╔══╝║╔══╝║╔╗╔╝──║║──╚══╗║
+#║║───║║║║║║║╚══╗╔╝╔╗╚╗║║───║╚══╗║║║╚╗──║║──║╚═╝║
+#╚╝───╚╝╚╝╚╝╚═══╝╚═╝╚═╝╚╝───╚═══╝╚╝╚═╝──╚╝──╚═══╝
+#
+#VERSION: 2.2.2[b]
+
 namespace ServerHelper;
 
 use pocketmine\command\Command;
@@ -9,7 +18,6 @@ use pocketmine\utils\TextFormat as SH;
 use pocketmine\Player;
 use pocketmine\entity\Effect;
 use pocketmine\entity\EffectInstance;
-use pocketmine\command\ConsoleCommandSender;
 
 class ServerHelper extends PluginBase{
 
@@ -36,7 +44,7 @@ class ServerHelper extends PluginBase{
     }
 
     //Commands
-    public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool
+    public function onCommand(CommandSender $sender, Command $command, string $lable, array $args): bool
     {
         switch($command->getName()){
             case "aboutsh":
@@ -47,7 +55,7 @@ class ServerHelper extends PluginBase{
                 return true;
 
             case "changelogsh":
-                $sender->sendMessage($this->prefix . "Look here: https://github.com/PMExpertsDE/Server-Helper/commits/master");
+                $sender->sendMessage($this->prefix . "Look here: https://github.com/PMExpertsDE/Server-Helper/commits/New");
                 return true;
 
             case "broadcast":
@@ -66,10 +74,17 @@ class ServerHelper extends PluginBase{
                     if($sender->hasPermission("serverhelper.command.clear")){
                         if(!empty($args[0])){
                             $target = $this->getServer()->getPlayer($args[0]);
-                            $target->getInventory()->clearAll();
-                            $target->getArmorInventory()->clearAll();
-                            $target->sendMessage($this->prefix . "Your Inventory was cleared by " . SH::GREEN . $sender->getName() . SH::GRAY . "!");
-                        }else{
+                            if($target == true){
+                                $target->getInventory()->clearAll();
+                                $target->getArmorInventory()->clearAll();
+                                $target->sendMessage($this->prefix . "Your Inventory was cleared by " . SH::GREEN . $sender->getName() . SH::GRAY . "!");
+                                $sender->sendMessage($this->prefix . "Inventory of " . SH::GREEN . $target->getDisplayName() . SH::GRAY . " was cleared successful!");
+                            }
+                            if($target == null){
+                                $sender->sendMessage($this->prefix . "There isn't any player with this name!");
+                            }
+                        }
+                        if(empty($args[0])){
                             $sender->getInventory()->clearAll();
                             $sender->getArmorInventory()->clearAll();
                             $sender->sendMessage($this->prefix . "Your Inventory was cleared successful!");
@@ -87,11 +102,18 @@ class ServerHelper extends PluginBase{
                     if($sender->hasPermission("serverhelper.command.cleararmor")){
                         if(!empty($args[0])){
                             $target = $this->getServer()->getPlayer($args[0]);
-                            $target->getArmorInventory()->clearAll();
-                            $target->sendMessage($this->prefix . "Your Armor Inventory was cleared by " . SH::GREEN . $sender->getName() . SH::GRAY . "!");
-                        }else{
+                            if($target == true){
+                                $target->getArmorInventory()->clearAll();
+                                $target->sendMessage($this->prefix . "Your armor inventory was cleared by " . SH::GREEN . $sender->getName() . SH::GRAY . "!");
+                                $sender->sendMessage($this->prefix . "armor inventory of " . SH::GREEN . $target->getDisplayName() . SH::GRAY . " was cleared successful!");
+                            }
+                            if($target == null){
+                                $sender->sendMessage($this->prefix . "There isn't any player with this name!");
+                            }
+                        }
+                        if(empty($args[0])){
                             $sender->getArmorInventory()->clearAll();
-                            $sender->sendMessage($this->prefix . "Your Armor Inventory was cleared successful!");
+                            $sender->sendMessage($this->prefix . "Your armor inventory was cleared successful!");
                         }
                     }else{
                         $sender->sendMessage($this->prefix . "You don't have the Permission to use this Command!");
@@ -132,9 +154,16 @@ class ServerHelper extends PluginBase{
                     if($sender->hasPermission("serverhelper.command.feed")){
                         if(!empty($args[0])){
                             $target = $this->getServer()->getPlayer($args[0]);
-                            $target->setFood(20);
-                            $target->sendMessage($this->prefix . "You were fed by " . SH::GREEN . $sender->getName() . SH::GRAY . "!");
-                        }else{
+                            if($target == true){
+                                $target->setFood(20);
+                                $target->sendMessage($this->prefix . "You were fed by " . SH::GREEN . $sender->getName() . SH::GRAY . "!");
+                                $sender->sendMessage($this->prefix . "You fed " . SH::GREEN . $target->getDisplayName() . SH::GRAY . " successful!");
+                            }
+                            if($target == null){
+                                $sender->sendMessage($this->prefix . "There isn't any Player with this name!");
+                            }
+                        }
+                        if(empty($args[0])){
                             $sender->setFood(20);
                             $sender->sendMessage($this->prefix . "You were fed!");
                         }
@@ -189,9 +218,16 @@ class ServerHelper extends PluginBase{
                     if($sender->hasPermission("serverhelper.command.gma")){
                         if(!empty($args[0])){
                             $target = $this->getServer()->getPlayer($args[0]);
-                            $target->setGameMode(2);
-                            $target->sendMessage($this->prefix . "Your Gamemode was set to " . SH::GREEN . "Adventure" . SH::GRAY . " by " . SH::GREEN . $sender->getName() . SH::GRAY . "!");
-                        }else{
+                            if($target == true){
+                                $target->setGameMode(2);
+                                $target->sendMessage($this->prefix . "Your Gamemode was set to " . SH::GREEN . "Adventure" . SH::GRAY . " by " . SH::GREEN . $sender->getName() . SH::GRAY . "!");
+                                $sender->sendMessage($this->prefix . "Gamemode of " . SH::GREEN . $target->getDisplayName() . SH::GRAY . " was changed to " . SH::GREEN . "Adventure" . SH::GRAY . "!");
+                            }
+                            if($target == null){
+                                $sender->sendMessage($this->prefix . "There isn't any player with this name!");
+                            }
+                        }
+                        if(empty($args[0])){
                             $sender->setGameMode(2);
                             $sender->sendMessage($this->prefix . "Your Gamemode was set to " . SH::GREEN . "Adventure" . SH::GRAY . "!");
                         }
@@ -208,9 +244,16 @@ class ServerHelper extends PluginBase{
                     if($sender->hasPermission("serverhelper.command.gmc")){
                         if(!empty($args[0])){
                             $target = $this->getServer()->getPlayer($args[0]);
-                            $target->setGameMode(1);
-                            $target->sendMessage($this->prefix . "Your Gamemode was set to " . SH::GREEN . "Creative" . SH::GRAY . " by " . SH::GREEN . $sender->getName() . SH::GRAY . "!");
-                        }else{
+                            if($target == true){
+                                $target->setGameMode(1);
+                                $target->sendMessage($this->prefix . "Your Gamemode was set to " . SH::GREEN . "Creative" . SH::GRAY . " by " . SH::GREEN . $sender->getName() . SH::GRAY . "!");
+                                $sender->sendMessage($this->prefix . "Gamemode of " . SH::GREEN . $target->getDisplayName() . SH::GRAY . " was changed to " . SH::GREEN . " Creative" . SH::GRAY . "!");
+                            }
+                            if($target == null){
+                                $sender->sendMessage($this->prefix . "There isn't any player with this name!");
+                            }
+                        }
+                        if(empty($args[0])){
                             $sender->setGameMode(1);
                             $sender->sendMessage($this->prefix . "Your Gamemode was set to " . SH::GREEN . "Creative" . SH::GRAY . "!");
                         }
@@ -227,9 +270,16 @@ class ServerHelper extends PluginBase{
                     if($sender->hasPermission("serverhelper.command.gms")){
                         if(!empty($args[0])){
                             $target = $this->getServer()->getPlayer($args[0]);
-                            $target->setGameMode(0);
-                            $target->sendMessage($this->prefix . "Your Gamemode was set to " . SH::GREEN . "Survival" . SH::GRAY . " by " . SH::GREEN . $sender->getName() . SH::GRAY . "!");
-                        }else{
+                            if($target == true){
+                                $target->setGameMode(0);
+                                $target->sendMessage($this->prefix . "Your Gamemode was set to " . SH::GREEN . "Survival" . SH::GRAY . " by " . SH::GREEN . $sender->getName() . SH::GRAY . "!");
+                                $sender->sendMessage($this->prefix . "Gamemode of " . SH::GREEN . $target->getDisplayName() . SH::GRAY . " was changed to " . SH::GREEN . "Survival" . SH::GRAY . "!");
+                            }
+                            if($target == null){
+                                $sender->sendMessage($this->prefix . "There isn't any player with this name!");
+                            }
+                        }
+                        if(empty($args[0])){
                             $sender->setGameMode(0);
                             $sender->sendMessage($this->prefix . "Your Gamemode was set to " . SH::GREEN . "Survival" . SH::GRAY . "!");
                         }
@@ -243,12 +293,19 @@ class ServerHelper extends PluginBase{
 
             case "gmsp":
                 if($sender instanceof Player){
-                    if($sender->hasPermission("serverhelper.command.gma")){
+                    if($sender->hasPermission("serverhelper.command.gmsp")){
                         if(!empty($args[0])){
                             $target = $this->getServer()->getPlayer($args[0]);
-                            $target->setGameMode(3);
-                            $target->sendMessage($this->prefix . "Your Gamemode was set to " . SH::GREEN . "Spectator" . SH::GRAY . " by " . SH::GREEN . $sender->getName() . SH::GRAY . "!");
-                        }else{
+                            if($target == true){
+                                $target->setGameMode(3);
+                                $target->sendMessage($this->prefix . "Your Gamemode was set to " . SH::GREEN . "Spectator" . SH::GRAY . " by " . SH::GREEN . $sender->getName() . SH::GRAY . "!");
+                                $sender->sendMessage($this->prefix . "Gamemode of " . SH::GREEN . $target->getDisplayName() . SH::GRAY . " was changed to " . SH::GREEN . "Spectator" . SH::GRAY . "!");
+                            }
+                            if($target == null){
+                                $sender->sendMessage($this->prefix . "There isn't any player with this name!");
+                            }
+                        }
+                        if(empty($args[0])){
                             $sender->setGameMode(3);
                             $sender->sendMessage($this->prefix . "Your Gamemode was set to " . SH::GREEN . "Spectator" . SH::GRAY . "!");
                         }
@@ -264,10 +321,17 @@ class ServerHelper extends PluginBase{
                 if($sender instanceof Player){
                     if($sender->hasPermission("serverhelper.commands.heal")){
                         if(!empty($args[0])){
-                            $target = $this->getServer()->getPlayer($args[0]);
-                            $target->setHealth($target->getMaxHealth());
-                            $target->sendMessage($this->prefix . "You were healed by " . SH::GREEN . $sender->getName() . SH::GRAY . "!");
-                        }else{
+                           $target = $this->getServer()->getPlayer($args[0]);
+                           if($target == true){
+                               $target->setHealth($target->getMaxHealth());
+                               $target->sendMessage($this->prefix . "You were healed by " . SH::GREEN . $sender->getName() . SH::GRAY . "!");
+                               $sender->sendMessage($this->prefix . "You healed " . SH::GREEN . $target->getDisplayName() . SH::GRAY . " successful!");
+                           }
+                           if($target == null){
+                               $sender->sendMessage($this->prefix . "There isn't any player with this name!");
+                           }
+                        }
+                        if(empty($args[0])){
                             $sender->setHealth($sender->getMaxHealth());
                             $sender->sendMessage($this->prefix . "You were healed!");
                         }
@@ -293,26 +357,26 @@ class ServerHelper extends PluginBase{
                 return true;
 
             case "nickname":
-                if($sender instanceof Player) {
-                    if ($sender->hasPermission("serverhelper.command.nick")) {
-                        if (!empty($args[0])) {
-                            if (!empty($args[1])) {
+                if($sender instanceof Player){
+                    if($sender->hasPermission("serverhelper.command.nickname")){
+                        if(!empty($args[0])){
+                            if(!empty($args[1])){
                                 $target = $this->getServer()->getPlayer($args[0]);
-                                if ($target == true) {
-                                    if ($args[1] == "reset") {
+                                if($target == true){
+                                    if($args[1] == "reset"){
                                         $target->setDisplayName($target->getName());
                                         $target->setNameTag($target->getName());
                                         $target->sendMessage($this->prefix . "Your Nickname was reset to " . SH::GREEN . $target->getName() . SH::GRAY . "!");
                                         $sender->sendMessage($this->prefix . "Nickname of " . SH::GREEN . $target->getName() . SH::GRAY . " was reset!");
                                         return true;
                                     }
-                                    if ($args[1] == "off") {
+                                    if($args[1] == "off"){
                                         $target->setDisplayName($sender->getName());
                                         $target->setNameTag($sender->getName());
                                         $target->sendMessage($this->prefix . "Your Nickname was reset to " . SH::GREEN . $target->getName() . SH::GRAY . "!");
                                         $sender->sendMessage($this->prefix . "Nickname of " . SH::GREEN . $target->getName() . SH::GRAY . " was reset!");
                                         return true;
-                                    } else {
+                                    }else{
                                         $target->setDisplayName($args[1]);
                                         $target->setNameTag($args[1]);
                                         $target->sendMessage($this->prefix . "Your Nickname was set to " . SH::GREEN . $target->getDisplayName() . SH::GRAY . "by " . SH::GREEN . $sender->getName() . "!");
@@ -320,33 +384,33 @@ class ServerHelper extends PluginBase{
                                         return true;
                                     }
                                 }
-                                if ($target == null) {
+                                if($target == null){
                                     $sender->sendMessage($this->prefix . "There isn't any player with this name!");
                                 }
 
-                            } else {
-                                if ($args[0] == "reset") {
+                            }else{
+                                if($args[0] == "reset"){
                                     $sender->setDisplayName($sender->getName());
                                     $sender->setNameTag($sender->getName());
                                     $sender->sendMessage($this->prefix . "Your Nickname was reset to " . SH::GREEN . $sender->getName() . SH::GRAY . "!");
                                     return true;
                                 }
-                                if ($args[0] == "off") {
+                                if($args[0] == "off"){
                                     $sender->setDisplayName($sender->getName());
                                     $sender->setNameTag($sender->getName());
                                     $sender->sendMessage($this->prefix . "Your Nickname was reset to " . SH::GREEN . $sender->getName() . SH::GRAY . "!");
                                     return true;
-                                } else {
+                                }else{
                                     $sender->setDisplayName($args[0]);
                                     $sender->setNameTag($args[0]);
                                     $sender->sendMessage($this->prefix . "Your Nickname was set to " . SH::GREEN . $sender->getDisplayName() . SH::GRAY . "!");
                                     return true;
                                 }
                             }
-                        } else {
+                        }else{
                             $sender->sendMessage($this->prefix . "Usage: /nickname <nickname> <player>");
                         }
-                    } else {
+                    }else{
                         $sender->sendMessage($this->prefix . "You don't have the Permission to use this Command!");
                     }
                 }else{
@@ -357,7 +421,18 @@ class ServerHelper extends PluginBase{
             case "test":
                 if($sender instanceof Player){
                     if($sender->hasPermission("serverhelper.command.test")){
-                        $sender->sendMessage($this->prefix . SH::GREEN . "Your Ping is: " . SH::GOLD . $sender->getPing() . SH::GREEN . "ms");
+                        if(!empty($args[0])){
+                            $target = $this->getServer()->getPlayer($args[0]);
+                            if($target == true){
+                                $sender->sendMessage($this->prefix . "Ping of " . SH::GREEN . $target->getDisplayName() . SH::GRAY . ": " . SH::GREEN . $target->getPing() . "ms");
+                            }
+                            if($target == null){
+                                $sender->sendMessage($this->prefix . "There isn't any player with this name!");
+                            }
+                        }
+                        if(empty($args[0])){
+                            $sender->sendMessage($this->prefix . SH::GREEN . "Your Ping is: " . SH::GREEN . $sender->getPing() . SH::GREEN . "ms");
+                        }
                     }else{
                         $sender->sendMessage($this->prefix . "You don't have the Permission to use this Command!");
                     }
@@ -382,45 +457,50 @@ class ServerHelper extends PluginBase{
             case "playersize":
                 if($sender->hasPermission("serverhelper.command.playersize")){
                     if(!empty($args[0])){
-                        $target = $this->getServer()->getPlayer($args[0]);
-                        if($target == true){
-                            if(!is_numeric($args[1])){
-                                if($args[1] == "reset"){
-                                    $target->setScale(1);
-                                    $target->sendMessage($this->prefix . "Your Size was reset by " . SH::GREEN . $sender->getName() . SH::GRAY . "!");
-                                    $sender->sendMessage($this->prefix . "Size of " . SH::GREEN . $target->getName() . SH::GRAY . " was reset!");
+                        if(!empty($args[1])){
+                            $target = $this->getServer()->getPlayer($args[1]);
+                            if($target == true){
+                                if(!is_numeric($args[0])){
+                                    if($args[0] == "reset") {
+                                        $target->setScale(1);
+                                        $target->sendMessage($this->prefix . "Your Size was reset by " . SH::GREEN . $sender->getName() . SH::GRAY . "!");
+                                        $sender->sendMessage($this->prefix . "Size of " . SH::GREEN . $target->getName() . SH::GRAY . " was reset!");
+                                    }
+                                }
+                                if(is_numeric($args[0])){
+                                    if($args[0] >= 0 && $args[0] <= 20){
+                                        $target->setScale($args[0]);
+                                        $target->sendMessage($this->prefix . "Your size was changed to " . SH::GREEN . $args[0] . SH::GRAY . " by " . SH::GREEN . $sender->getName() . SH::GRAY . "!");
+                                        $sender->sendMessage($this->prefix . "Size of " . SH::GREEN . $target->getName() . SH::GRAY . " was changed to " . SH::GREEN . $args[0] . SH::GRAY . "!");
+                                    }else{
+                                        $sender->sendMessage($this->prefix . "Usage: /playersize <0.1-20> <player>");
+                                    }
                                 }
                             }
-                            if(is_numeric($args[1])){
-                                if(count($args) == 1){
-                                    if($args[1] >= 0 && $args[1] <= 20){
-                                        $target->setScale($args[0]);
-                                        $target->sendMessage($this->prefix . "Your size was changed to " . SH::GREEN . $args[1] . SH::GRAY . " by " . SH::GREEN . $sender->getName() . SH::GRAY . "!");
-                                        $sender->sendMessage($this->prefix . "Size of " . SH::GREEN . $target->getName() . SH::GRAY . " was changed to " . SH::GREEN . $args[1] . SH::GRAY . "!");
-                                    }else{
-                                        $sender->sendMessage($this->prefix . "Usage: /size 0.1-20");
-                                    }
-                                }else{
-                                    $sender->sendMessage($this->prefix . "Usage: /size 0.1-20");
-                                }
+                            if($target == null){
+                                $sender->sendMessage($this->prefix . "There isn't any player with this name!");
                             }
                         }
-                        if($target == null){
-                            if(!is_numeric($args)){
+                        if(empty($args[1])){
+                            if(!is_numeric($args[0])){
                                 if($args[0] == "reset"){
                                     $sender->setScale(1);
                                     $sender->sendMessage($this->prefix . "You size was reset!");
+                                }else{
+                                    $sender->sendMessage($this->prefix . "Usage: /playersize <0.1-20/reset> <player>");
                                 }
                             }
-                            if(is_numeric($args)){
-                                if($args[0] >= 0 && $args[1] <= 20) {
+                            if(is_numeric($args[0])){
+                                if($args[0] >= 0 && $args[0] <= 20) {
                                     $sender->setScale($args[0]);
                                     $sender->sendMessage($this->prefix . "Your size was changed to " . SH::GREEN . $args[0] . SH::GRAY . "!");
+                                }else{
+                                    $sender->sendMessage($this->prefix . "Usage: /playersize <0.1-20/reset> <player>");
                                 }
                             }
                         }
                     }else{
-                        $sender->sendMessage($this->prefix . "Usage: /playersize <size> <player>");
+                        $sender->sendMessage($this->prefix . "Usage: /playersize <0.1-20/reset> <player>");
                     }
                 }else{
                     $sender->sendMessage($this->prefix . "You don't have the Permission to use this Command!");
@@ -528,7 +608,6 @@ class ServerHelper extends PluginBase{
                         $sender->sendMessage(SH::GRAY . "Command List" . SH::GREEN . " ServerHelper");
                         $sender->sendMessage(SH::GRAY . "You want to see all Aliasses? do /shh alias");
                         $sender->sendMessage(SH::GREEN . "/shhelp" . SH::GRAY . " » " . SH::WHITE . "ServerHelper Help Command");
-                        $sender->sendMessage(SH::GREEN . "/me" . SH::GRAY . " » " . SH::WHITE . "/me Command for Altay Servers");
                         $sender->sendMessage(SH::GREEN . "/fly" . SH::GRAY . " » " . SH::WHITE . "fly Command");
                         $sender->sendMessage(SH::GREEN . "/feed" . SH::GRAY . " » " . SH::WHITE . "feed players");
                         $sender->sendMessage(SH::GREEN . "/heal" . SH::GRAY . " » " . SH::WHITE . "heal players");

@@ -63,6 +63,7 @@ Simple Helper Plugin for Servers!
 ### Next TODO:
 - multilang
 - hotbar change
+
 # Addon Plugins
 - [LobbyItems-PMExperts](https://github.com/PMExpertsDE/LobbyItems-PMExperts)
 - [MeCommand(for Altay Servers)](https://github.com/PMExpertsDE/MeCommand)
@@ -71,5 +72,8 @@ Simple Helper Plugin for Servers!
 
 ### You want to help us?
 Do it! Yeah were search for Developers of you want to help do it.
+
+### You want to Fork?
+Please leave an star and doit! 
 
 ## Thanks for all Users and Helpers!

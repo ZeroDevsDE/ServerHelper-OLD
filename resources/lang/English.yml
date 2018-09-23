@@ -1,0 +1,196 @@
+#LANGUAGEFILE - SERVERHELPER - ENGLISH - ENGLISH
+#
+#╔═══╗╔═╗╔═╗╔═══╗╔═╗╔═╗╔═══╗╔═══╗╔═══╗╔════╗╔═══╗
+#║╔═╗║║║╚╝║║║╔══╝╚╗╚╝╔╝║╔═╗║║╔══╝║╔═╗║║╔╗╔╗║║╔═╗║
+#║╚═╝║║╔╗╔╗║║╚══╗─╚╗╔╝─║╚═╝║║╚══╗║╚═╝║╚╝║║╚╝║╚══╗
+#║╔══╝║║║║║║║╔══╝─╔╝╚╗─║╔══╝║╔══╝║╔╗╔╝──║║──╚══╗║
+#║║───║║║║║║║╚══╗╔╝╔╗╚╗║║───║╚══╗║║║╚╗──║║──║╚═╝║
+#╚╝───╚╝╚╝╚╝╚═══╝╚═╝╚═╝╚╝───╚═══╝╚╝╚═╝──╚╝──╚═══╝
+#
+#ServerHelper (c) 2018
+#This Plugin is licensed under GNU General Public License v3.0, it is free to use.
+#You can take some code out of our Plugin but please do not change the Author and Name.
+#
+#>----------------------------------------------------------------------------------------<
+#
+# Team: PMExpertsDE
+# Author: HonorGamerHD
+# Discord: https://discordapp.com/invite/Cnffuhs
+# Website: http://pmexperts.tk
+
+#Lang config
+#PLEASE DO NOT CHANGE LANG CONFIG!
+#Change Plugin Prefix in config.yml!
+lang.NAME: "English"
+lang.ID: "en_EN"
+lang.Author: "HonorGamerHD"
+
+#Logger messages
+message.logger.startup: "ServerHelper was activated!"
+message.logger.version: "ServerHelper version: "
+message.logger.choosen.prefix: "Choosen ServerHelper Prefix: "
+message.logger.choosen.bcprefix: "Choosen Broadcast Prefix: "
+message.logger.choosen.lang: "Choosen Language: §r"
+message.warning.configKey: "§c[ERROR] §7Please check your ConfigKey! ConfigKey: "
+
+#Warning Messages
+message.warning.noplayerfound: "There isn't any player with this name!"
+message.warning.noperm: "You don't have the Permission to use this Command!"
+message.warning.onlyplayers: "This Command is Only for Players!"
+
+#Command: About
+message.about.line1: "ServerHelper by PMExperts!"
+message.about.line2: "you want a list of all SH Commands? do /shhelp!"
+message.about.line3: "Problems? Join our Discord: https://discord.gg/M7aQfm"
+
+#Command: Changelog
+message.changelog: "Look here: https://github.com/PMExpertsDE/Server-Helper/commits/New"
+
+#Command: Broadcast
+message.broadcast.successful: "your broadcast message was send successful!"
+message.broadcast.usage: "Usage: /broadcast <message>"
+
+#Command: Clear
+#Clear: other
+message.clear.target.part1: "Your inventory was cleared by §e" #SENDER
+message.clear.target.part2: "§7!"
+message.clear.sender.part1: "Inventory of §e" #TARGET
+message.clear.sender.part2: " §7was cleared successful!"
+
+#Clear: self
+message.clear.self: "Your Inventory was cleared successful!"
+
+#Command: ClearArmor
+#ClearArmor: other
+message.cleararmor.target.part1: "Your armor inventory was cleared by §e" #SENDER
+message.cleararmor.target.part2: "§7!"
+message.cleararmor.sender.part1: "Armor inventory of §e" #TARGET
+message.cleararmor.sender.part2: "§7 was cleared successful!"
+
+#ClearArmor: self
+message.cleararmor.self: "Your armor inventory was cleared successful!"
+
+#Command: Day
+message.day.part1: "Time was set to §eDay §7!"
+
+#Command: Night
+message.night: "Time was set to §eNight §7!"
+
+#Command: Feed
+#Feed: other
+message.feed.target.part1: "You were fed by §e" #SENDER
+message.feed.target.part2: "§7!"
+message.feed.sender.part1: "You fed §e" #TARGET
+message.feed.sender.part2: " §7successful!"
+
+#Feed: self
+message.feed.self: "You were fed!"
+
+#Command: Fly
+#Fly: other
+message.fly.target.on: "You can now fly!"
+message.fly.target.off: "You can no longer fly!"
+
+#Fly: self
+message.fly.self.on: "You can now fly!"
+message.fly.self.off: "You can no longer fly!"
+
+#Command: GMA, GMC, GMS, GMSP
+message.gamemode.part1: "Your Gamemode was set to §e" #GAMEMODE
+message.gamemode.sender.part1: "Gamemode of §e" #TARGET
+message.gamemode.sender.part2: "§7 was changed to §e" #GAMEMODE
+
+#GAMEMODES
+message.gamemode.adventure: "§eAdventure§7!"
+message.gamemode.creative: "§eCreative§7!"
+message.gamemode.survival: "§eSurvival§7!"
+message.gamemode.spectator: "§eSpectator§7!"
+
+#Command: Heal
+#Heal: other
+message.heal.target: "You were healed!"
+message.heal.sender.part1: "You healed §e" #TARGET
+message.heal.sender.part2: "§7 successful!"
+
+#Heal: self
+message.heal.self: "You were healed!"
+
+#Command: ItemID
+message.itemid: "Item ID: §e" #ITEMID
+
+#Command: NickName:
+message.nick.reset: "Your Nickname was reset to §e" #NORMAL NAME
+message.nick.!: "§7!"
+message.nick.nickof: "Nickname of §e" #TARGET
+message.nick.wasreset: "§7 was reset!"
+message.nick.wassetto: "Your Nickname was set to §e" #NICKNAME
+message.nick.by: "§7 by §e" #SENDER
+message.nick.wassetto2: "§7 was set to §e" #NICKNAME
+message.nick.usage: "Usage: /nickname <nickname> <player>"
+
+#Command: Ping
+#Ping: other
+message.ping.sender.part1: "Ping of §e" #TARGET
+message.ping.sender.part2: "§7: §e" #PING
+message.ping.sender.part3: "ms"
+
+#Ping: self
+message.ping.self: "Your Ping is: §e" #PING
+
+#Command: TStop
+message.tstop: "Time was stopped!"
+
+#Command: PlayerSize
+#PlayerSize: other
+message.size.sizewasresetby: "Your Size was reset by §e" #SENDER
+message.size.!: "§7!"
+message.size.sizeof: "Size of §e" #TARGET
+message.size.wasreset: "§7 was reset!"
+message.size.by: "§7 by §e" #SENDER
+message.size.target.part1: "Your size was changed to §e" #NEWSIZE
+message.size.sender.part1: "Size of §e" #TARGET
+message.nick.sender.part2: "§7 was changed to §e" #NEWSIZE
+message.size.usage: "Usage: /playersize <0.1-20> <player>"
+
+#PlayerSize: self
+message.size.self.reset: "Your size was reset!"
+message.size.self.setsize: "Your size was changed to §e" #NEWSIZE
+
+#Command: Vanish
+message.vanish.usage: "Usage: /vanish <on/off> <player>"
+message.vanished.true: "You are now Vanished!"
+message.vanished.false: "You are now visible!"
+
+#Command: Tphere
+message.tphere.target: "You were teleported to §e" #SENDER
+message.tphere.!: "§7!"
+message.tphere.sender.part1: "The Player §e" #TARGET
+message.tphere.sender.part2: "§7 was teleported to you!"
+message.tphere.usage: "Usage: /tphere <player>"
+
+#Command: ServerHelper - HELP
+message.help.aliases: "§eAll ServerHelper-CommandAliases!"
+message.help.CommandList: "§7Command List §eServerHelper"
+message.help.wantseealiases: "§7You want to see all Aliasses? do /shh alias"
+
+#Command - LIST
+message.help.shhelp: "§7ServerHelper Help Command"
+message.help.broadcast: "§7broadcast your message"
+message.help.nickname: "§7change your nickname"
+message.help.vanish: "§7makes you invisible"
+message.help.clear: "§7clear your Inventory"
+message.help.cleararmor: "§7clear only your Armor Inventory"
+message.help.size: "§7changes your skinsize"
+message.help.fly: "§7enable fly"
+message.help.feed: "§7feed players"
+message.help.heal: "§7heal players"
+message.help.test: "§7test command | check your ping"
+message.help.gmc: "§7set your gamemode to Creative"
+message.help.gms: "§7set your gamemode to Survival"
+message.help.gma: "§7set your gamemode to Adventure"
+message.help.gmsp: "§7set your gamemode to Spectator"
+message.help.day: "§7set world time to day"
+message.help.night: "§7set world time to night"
+message.help.itemid: "§7gets the id of the item in your hand"
+message.help.tstop: "§7stop time in your world"
+message.help.about: "§7about ServerHelper"

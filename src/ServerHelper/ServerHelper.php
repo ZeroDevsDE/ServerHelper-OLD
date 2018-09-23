@@ -45,6 +45,7 @@ class ServerHelper extends PluginBase{
             @mkdir($this->getDataFolder() . "lang/");
             $this->saveResource("lang/English.yml");
             $this->saveResource("lang/Deutsch.yml");
+            $this->saveResource("lang/Italiano.yml");
         }
 
         $language = $this->cfg->get("Language");

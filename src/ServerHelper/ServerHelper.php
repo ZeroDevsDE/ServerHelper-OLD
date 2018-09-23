@@ -525,8 +525,7 @@ class ServerHelper extends PluginBase{
                                 if(!is_numeric($args[0])){
                                     if($args[0] == "reset") {
                                         $target->setScale(1);
-                                        $target->sendMessage($prefix . $this->getLang("message.size.sizewasresetby") . $sender->getName() . $this->getLang("message.size.!"));
-                                        $sender->sendMessage($prefix . $this->getLang("message.size.sizeof") . $target->getName() . $this->getLang("message.size.wasreset"));
+                                        $target->sendMessage($prefix . $this->getLang("message.size.sizewasresetby") . $sender->getName() . $this->getLang("message.size.!"));$sender->sendMessage($prefix . $this->getLang("message.size.sizeof") . $target->getName() . $this->getLang("message.size.wasreset"));
                                     }
                                 }
                                 if(is_numeric($args[0])){

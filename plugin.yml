@@ -1,6 +1,6 @@
 name: Server-Helper
 main: ServerHelper\ServerHelper
-version: 2.2.2[b]
+version: 2.4.2[b]
 api:
 - 2.0.0 #pmmp
 - 3.0.0 #pmmp

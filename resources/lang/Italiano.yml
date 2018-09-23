@@ -1,0 +1,196 @@
+#LANGUAGEFILE - SERVERHELPER - ITALIANO
+#
+#╔═══╗╔═╗╔═╗╔═══╗╔═╗╔═╗╔═══╗╔═══╗╔═══╗╔════╗╔═══╗
+#║╔═╗║║║╚╝║║║╔══╝╚╗╚╝╔╝║╔═╗║║╔══╝║╔═╗║║╔╗╔╗║║╔═╗║
+#║╚═╝║║╔╗╔╗║║╚══╗─╚╗╔╝─║╚═╝║║╚══╗║╚═╝║╚╝║║╚╝║╚══╗
+#║╔══╝║║║║║║║╔══╝─╔╝╚╗─║╔══╝║╔══╝║╔╗╔╝──║║──╚══╗║
+#║║───║║║║║║║╚══╗╔╝╔╗╚╗║║───║╚══╗║║║╚╗──║║──║╚═╝║
+#╚╝───╚╝╚╝╚╝╚═══╝╚═╝╚═╝╚╝───╚═══╝╚╝╚═╝──╚╝──╚═══╝
+#
+#ServerHelper (c) 2018
+#This Plugin is licensed under GNU General Public License v3.0, it is free to use.
+#You can take some code out of our Plugin but please do not change the Author and Name.
+#
+#>----------------------------------------------------------------------------------------<
+#
+# Team: PMExpertsDE
+# Author: HonorGamerHD
+# Discord: https://discordapp.com/invite/Cnffuhs
+# Website: http://pmexperts.tk
+
+#Lang config
+#PLEASE DO NOT CHANGE LANG CONFIG!
+#Change Plugin Prefix in config.yml!
+lang.NAME: "Italiano"
+lang.ID: "it_IT"
+lang.Author: "Ender_"
+
+#Logger messages
+message.logger.startup: "ServerHelper è stato attivato!"
+message.logger.version: "Versione di ServerHelper: "
+message.logger.choosen.prefix: "Prefisso di ServerHelper scelto: "
+message.logger.choosen.bcprefix: "Prefisso di Broadcast scelto: "
+message.logger.choosen.lang: "Lingua scelta: §r"
+message.warning.configKey: "§c[ERRORE] §7Perfavore controlla la tua ConfigKey! ConfigKey: "
+
+#Warning Messages
+message.warning.noplayerfound: "Non c'è nessun giocatore con questo nome!"
+message.warning.noperm: "Non hai il permesso di usare questo comando!"
+message.warning.onlyplayers: "Questo comando è solo per i giocatori!"
+
+#Command: About
+message.about.line1: "ServerHelper creato da PMExperts!"
+message.about.line2: "Vuoi una lista di tutti i comandi SH? scrivi /shhelp!"
+message.about.line3: "Hai problemi riguardo al plugin? Unisciti al nostro Discord: https://discord.gg/M7aQfm"
+
+#Command: Changelog
+message.changelog: "Guarda qui: https://github.com/PMExpertsDE/Server-Helper/commits/New"
+
+#Command: Broadcast
+message.broadcast.successful: "Il tuo messaggio broadcast è stato inviato con successo!"
+message.broadcast.usage: "Uso corretto: /broadcast <messaggio>"
+
+#Command: Clear
+#Clear: other
+message.clear.target.part1: "Il tuo inventario è stato cancellato da §e" #SENDER
+message.clear.target.part2: "§7!"
+message.clear.sender.part1: "Inventario di §e" #TARGET
+message.clear.sender.part2: " §7è stato cancellato con successo!"
+
+#Clear: self
+message.clear.self: "Il tuo inventario è stato cancellato con successo!"
+
+#Command: ClearArmor
+#ClearArmor: other
+message.cleararmor.target.part1: "Il tuo inventario di armature è stato eliminato da §e" #SENDER
+message.cleararmor.target.part2: "§7!"
+message.cleararmor.sender.part1: "Inventario di armature di §e" #TARGET
+message.cleararmor.sender.part2: "§7 è stato cancellato con successo!"
+
+#ClearArmor: self
+message.cleararmor.self: "Il tuo inventario delle armature è stato cancellato con successo!"
+
+#Command: Day
+message.day.part1: "Il tempo è stato impostato su §eGiorno §7!"
+
+#Command: Night
+message.night: "Il tempo è stato impostato su §eNotte §7!"
+
+#Command: Feed
+#Feed: other
+message.feed.target.part1: "Sei stato Sfamato da §e" #SENDER
+message.feed.target.part2: "§7!"
+message.feed.sender.part1: "Hai Sfamato §e" #TARGET
+message.feed.sender.part2: " §7correttamente!"
+
+#Feed: self
+message.feed.self: "Sei stato sfamato!"
+
+#Command: Fly
+#Fly: other
+message.fly.target.on: "Ora puoi volare! "
+message.fly.target.off: "Non puoi più volare!"
+
+#Fly: self
+message.fly.self.on: "Ora puoi volare!"
+message.fly.self.off: "Non puoi più volare!"
+
+#Command: GMA, GMC, GMS, GMSP
+message.gamemode.part1: "La tua modalità di gioco è stata impostata su §e" #GAMEMODE
+message.gamemode.sender.part1: "La modalità di gioco di §e" #TARGET
+message.gamemode.sender.part2: "§7 è stata impostata su §e" #GAMEMODE
+
+#GAMEMODES
+message.gamemode.adventure: "§eAvventura§7!"
+message.gamemode.creative: "§eCreativa§7!"
+message.gamemode.survival: "§eSopravvivenza§7!"
+message.gamemode.spectator: "§eSpettatore§7!"
+
+#Command: Heal
+#Heal: other
+message.heal.target: "Sei stato guarito!"
+message.heal.sender.part1: "Hai guarito §e" #TARGET
+message.heal.sender.part2: "§7 correttamente!"
+
+#Heal: self
+message.heal.self: "Sei stato guarito!"
+
+#Command: ItemID
+message.itemid: "Item ID: §e" #ITEMID
+
+#Command: NickName:
+message.nick.reset: "Il tuo nickname è stato reimpostato su §e" #NORMAL NAME
+message.nick.!: "§7!"
+message.nick.nickof: "Il nickname di §e" #TARGET
+message.nick.wasreset: "§7 è stato ripristinato!"
+message.nick.wassetto: "Il tuo nickname è stato impostato su §e" #NICKNAME
+message.nick.by: "§7 da §e" #SENDER
+message.nick.wassetto2: "§7 era impostato su §e" #NICKNAME
+message.nick.usage: "Uso corretto: /nickname <nickname> <giocatore>"
+
+#Command: Ping
+#Ping: other
+message.ping.sender.part1: "Ping di §e" #TARGET
+message.ping.sender.part2: "§7: §e" #PING
+message.ping.sender.part3: "ms"
+
+#Ping: self
+message.ping.self: "Il tuo Ping è: §e" #PING
+
+#Command: TStop
+message.tstop: "Il tempo è stato fermato!"
+
+#Command: PlayerSize
+#PlayerSize: other
+message.size.sizewasresetby: "La tua altezza è stata ripristinata da §e" #SENDER
+message.size.!: "§7!"
+message.size.sizeof: "L'altezza di §e" #TARGET
+message.size.wasreset: "§7 è stata resettata!"
+message.size.by: "§7 da §e" #SENDER
+message.size.target.part1: "La tua altezza è stata cambiata in §e" #NEWSIZE
+message.size.sender.part1: "L' altezza di §e" #TARGET
+message.nick.sender.part2: "§7 è stata cambiata in §e" #NEWSIZE
+message.size.usage: "Uso corretto: /playersize <0.1-20> <giocatore>"
+
+#PlayerSize: self
+message.size.self.reset: "La tua altezza è stata resettata!"
+message.size.self.setsize: "La tua altezza è stata cambiata in §e" #NEWSIZE
+
+#Command: Vanish
+message.vanish.usage: "Uso corretto: /vanish <on/off> <giocatore>"
+message.vanished.true: "Ora sei sparito!"
+message.vanished.false: "Ora sei visibile!"
+
+#Command: Tphere
+message.tphere.target: "Sei stato teleportato verso §e" #SENDER
+message.tphere.!: "§7!"
+message.tphere.sender.part1: "Il giocatore §e" #TARGET
+message.tphere.sender.part2: "§7 Si è teletrasportato da te"
+message.tphere.usage: "Uso corretto: /tphere <giocatore>"
+
+#Command: ServerHelper - HELP
+message.help.aliases: "§eTutti gli alias dei comandi di ServerHelper!"
+message.help.CommandList: "§7Lista dei comandi di §eServerHelper"
+message.help.wantseealiases: "§7Vuoi vedere tutti gli alias? scrivi /shh alias"
+
+#Command - LIST
+message.help.shhelp: "§7Aiuto per ServerHelper"
+message.help.broadcast: "§7trasmette il tuo messaggio"
+message.help.nickname: "§7cambia il tuo nickname"
+message.help.vanish: "§7ti rende invisibile"
+message.help.clear: "§7cancella il tuo inventario"
+message.help.cleararmor: "§7cancella solo il tuo inventario di armature"
+message.help.size: "§7cambia la tua altezza"
+message.help.fly: "§7abilita il volo"
+message.help.feed: "§7sfama i giocatori"
+message.help.heal: "§7cura i giocatori"
+message.help.test: "§7comando di prova | controlla il tuo ping"
+message.help.gmc: "§7imposta la tua modalità di gioco su Creativa"
+message.help.gms: "§7imposta la tua modalità di gioco su Sopravvivenza"
+message.help.gma: "§7imposta la tua modalità di gioco su Avventura"
+message.help.gmsp: "§7imposta la tua modalità di gioco su Spettatore"
+message.help.day: "§7imposta l'ora del mondo su giorno"
+message.help.night: "§7imposta l'ora del mondo su notte"
+message.help.itemid: "§7ottiene l'id dell'elemento nella tua mano"
+message.help.tstop: "§7ferma il tempo nel tuo mondo"
+message.help.about: "§7about ServerHelper"

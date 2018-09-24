@@ -39,10 +39,12 @@ Simple Helper Plugin for Servers!
     - [ ] /near
 - [ ] Api's
     - [x] TeleportAPI
+    - [x] Addon Loader(get other installed PME Plugins)
+    - [x] Config checker
     - [ ] BanAPI
 - [ ] other functions
 	- [ ] UI's/Hotbar
-    - [ ] multilang system(?)
+    - [x] multilang system(
     - [x] Plugin prefix
     - [x] Permission System
     - [x] Other Player command(f.e.: /gmc <Player>)
@@ -61,8 +63,8 @@ Simple Helper Plugin for Servers!
     - [x] NickNames(/nick <nickname>
 
 ### Next TODO:
-- multilang
 - hotbar change
+- add more languages
 
 # Addon Plugins
 - [LobbyItems-PMExperts](https://github.com/PMExpertsDE/LobbyItems-PMExperts)

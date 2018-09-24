@@ -18,7 +18,7 @@
 
 
 #PLEASE DO NOT CHANGE THIS!!!
-VERSION: 2.4.2[b]
+VERSION: 2.5.2[b]
 
 #Prefix of ServerHelper
 #English: §7» §bSH §7»
@@ -30,5 +30,5 @@ BroadcastPrefix: "§7» §l§bBroadcast §r§7» "
 
 #choose your Language here!
 #Default: English
-#Languages: English, Deutsch, Italiano | add more via pull request!
+#Languages: English, Deutsch, Italiano, Dütsch | add more via pull request!
 Language: English

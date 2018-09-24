@@ -23,6 +23,7 @@
 #Change Plugin Prefix in config.yml!
 lang.NAME: "Deutsch"
 lang.ID: "de_DE"
+lang.Author: "HonorGamerHD"
 
 #Logger messages
 message.logger.startup: "ServerHelper wurde aktiviert!"
@@ -31,11 +32,15 @@ message.logger.choosen.prefix: "gewählte ServerHelper Prefix: "
 message.logger.choosen.bcprefix: "gewählte Broadcast prefix: "
 message.logger.choosen.lang: "gewählte Sprache: §r"
 message.warning.configkey: "§c[ERROR] §7Bitte überprüfe deinen ConfigKey! CONFIG-KEY: "
+message.logger.addons: "-------------PMExperts Addons-------------"
+message.logger.addonfound: "§eAddon gefunden:"
+message.logger.addonnotfound: "§cAddon nicht gefunden:"
 
 #Warning Messages
 message.warning.noplayerfound: "Es gibt keinen Spieler mit diesem Namen!"
 message.warning.noperm: "Du hast keine Berechtigung für diesen Command!"
 message.warning.onlyplayers: "Dieser Command ist nur für Spieler!"
+message.critical.incompatibleconfig: "Bitte update deine Config!"
 
 #Command: About
 message.about.line1: "ServerHelper von PMExperts!"

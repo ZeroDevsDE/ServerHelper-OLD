@@ -32,11 +32,15 @@ message.logger.choosen.prefix: "Prefisso di ServerHelper scelto: "
 message.logger.choosen.bcprefix: "Prefisso di Broadcast scelto: "
 message.logger.choosen.lang: "Lingua scelta: §r"
 message.warning.configKey: "§c[ERRORE] §7Perfavore controlla la tua ConfigKey! ConfigKey: "
+message.logger.addons: "-------------Componenti aggiuntivi di PMExperts-------------"
+message.logger.addonfound: "§eadd-on trovato:"
+message.logger.addonnotfound: "Componente aggiuntivo non trovato: "
 
 #Warning Messages
 message.warning.noplayerfound: "Non c'è nessun giocatore con questo nome!"
 message.warning.noperm: "Non hai il permesso di usare questo comando!"
 message.warning.onlyplayers: "Questo comando è solo per i giocatori!"
+message.critical.incompatibleconfig: "Per favore aggiorna la tua configurazione!"
 
 #Command: About
 message.about.line1: "ServerHelper creato da PMExperts!"

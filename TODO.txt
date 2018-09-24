@@ -1,10 +1,6 @@
 OLD:
 
 NEXT COMMIT:
-- removed useless uses
-- added multilang
-- added german lang
-- added english lang
-- fixed broadcast prefix
+
 
 

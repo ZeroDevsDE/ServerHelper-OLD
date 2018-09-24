@@ -1,0 +1,200 @@
+#LANGUAGEFILE - SERVERHELPER - DÜTSCH - SCHWEIZERDEUTSCH
+#
+#╔═══╗╔═╗╔═╗╔═══╗╔═╗╔═╗╔═══╗╔═══╗╔═══╗╔════╗╔═══╗
+#║╔═╗║║║╚╝║║║╔══╝╚╗╚╝╔╝║╔═╗║║╔══╝║╔═╗║║╔╗╔╗║║╔═╗║
+#║╚═╝║║╔╗╔╗║║╚══╗─╚╗╔╝─║╚═╝║║╚══╗║╚═╝║╚╝║║╚╝║╚══╗
+#║╔══╝║║║║║║║╔══╝─╔╝╚╗─║╔══╝║╔══╝║╔╗╔╝──║║──╚══╗║
+#║║───║║║║║║║╚══╗╔╝╔╗╚╗║║───║╚══╗║║║╚╗──║║──║╚═╝║
+#╚╝───╚╝╚╝╚╝╚═══╝╚═╝╚═╝╚╝───╚═══╝╚╝╚═╝──╚╝──╚═══╝
+#
+#ServerHelper (c) 2018
+#This Plugin is licensed under GNU General Public License v3.0, it is free to use.
+#You can take some code out of our Plugin but please do not change the Author and Name.
+#
+#>----------------------------------------------------------------------------------------<
+#
+# Team: PMExpertsDE
+# Author: HonorGamerHD
+# Discord: https://discordapp.com/invite/Cnffuhs
+# Website: http://pmexperts.tk
+
+#Lang config
+#PLEASE DO NOT CHANGE LANG CONFIG!
+#Change Plugin Prefix in config.yml!
+lang.NAME: "Dütsch"
+lang.ID: "dü_DÜ"
+lang.Author: "VirdSeater"
+
+#Logger messages
+message.logger.startup: "isch aktiviert worde!"
+message.logger.version: "ServerHelper Version: §r"
+message.logger.choosen.prefix: "gwählti ServerHelper Prefix: "
+message.logger.choosen.bcprefix: "gwählti Broadcast prefix: "
+message.logger.choosen.lang: "gwählti Sprach: §r"
+message.warning.configkey: "§c[ERROR] §7Bitte überprüefe din ConfigKey! CONFIG-KEY: "
+message.logger.addons: "-------------PMExperts Addons-------------"
+message.logger.addonfound: "§eErwiiterig isch gfunde worde"
+message.logger.addonnotfound: "§cErwiiterig isch nöd gfunde worde:"
+
+#Warning Messages
+message.warning.noplayerfound: "Es git kein Spieler mit dem Name"
+message.warning.noperm: "Du hesch keis Recht für de Command"
+message.warning.onlyplayers: "De Command isch nur für Spieler"
+message.critical.incompatibleconfig: "Aktualisier dini Config!"
+
+#Command: About
+message.about.line1: "ServerHelper vo PMExperts!"
+message.about.line2: "Du wetsch alli Befehl vo ServerHelper gseh? Mach /shhelp"
+message.about.line3: "Du bruchsch hikf? Lueg uf eisem Discord!: https://discord.gg/M7aQfm"
+
+#Command: Changelog
+message.changelog: "Lueg mal da: https://github.com/PMExpertsDE/Server-Helper/commits/New"
+
+#Command: Broadcast
+message.broadcast.successful: "Dini Broadcast Nachricht isch abgsendet worde"
+message.broadcast.usage: "Benutzig: /broadcast <Nachricht>"
+
+#Command: Clear
+#Clear: other
+message.clear.part1: "Dis Inventar isch vom §e" #SENDER
+message.clear.part2: "§7gleert worde!"
+message.clear.sender.part1: "Inventar vo §e"
+message.clear.sender.part2: " §7isch erfolgriech gleert worde!"
+
+#Clear: self
+message.clear.self: "Dis Inventar isch erfolgriech gleert worde!"
+
+#Command: ClearArmor
+#ClearArmor: other
+message.cleararmor.target.part1: "Dis Rüstigs Inventar isch vom §e" #SENDER
+message.cleararmor.target.part2: "§7gleert worde!"
+message.cleararmor.sender.part1: "Rüstigs Inventar vom §e" #TARGET
+message.cleararmor.sender.part2: "§7 isch erfolgriech gleert worde!"
+
+#ClearArmor: self
+message.cleararmor.self: "Dis Rüstigs Inventar isch gleert worde!"
+
+#Command: Day
+message.day.part1: "Ziit isch uf Tag gsetzt worde!"
+
+#Command: Night
+message.night: "Ziit isch uf Nacht gsetzt worde!"
+
+#Command: Feed
+#Feed: other
+message.feed.target.part1: "Du bisch vom §e" #SENDER
+message.feed.target.part2: "§7gfüetered worde!"
+message.feed.sender.part1: "Du hesch §e" #TARGET
+message.feed.sender.part2: "§7 erfolgriech gfüetered!"
+
+#Feed: self
+message.feed.self: "Du bisch gfüetered worde!"
+
+#Command: Fly
+#Fly: other
+message.fly.target.on: "Du chasch jetzt flüge!"
+message.fly.target.off: "Du chasch jetzt nümme flüge!"
+
+#Fly: self
+message.fly.self.on: "Du chasch jetzt flüge!"
+message.fly.self.off: "Du chasch jetzt nümme flüge!"
+
+#Command: GMA, GMC, GMS, GMSP
+message.gamemode.part1: "Din Spielmodus isch jetzt  §e" #GAMEMODE
+message.gamemode.sender.part1: "Spielmodus vom §e" #TARGET
+message.gamemode.sender.part2: "§7 isch jetzt §e" #GAMEMODE
+
+#GAMEMODES
+message.gamemode.adventure: "§eAbentüür§7!"
+message.gamemode.creative: "§eKreativ§7!"
+message.gamemode.survival: "§eÜberlebe§7!"
+message.gamemode.spectator: "§eZueschauer§7!"
+
+#Command: Heal
+#Heal: other
+message.heal.target: "Du bisch gheilt worde!"
+message.heal.sender.part1: "Du hesch §e" #TARGET
+message.heal.sender.part2: "§7 erfolgriech gheilt!"
+
+#Heal: self
+message.heal.self: "Du bisch gheilt worde!"
+
+#Command: ItemID
+message.itemid: "Item ID: §e" #ITEMID
+
+#Command: NickName:
+message.nick.reset: "Din Nickname isch §e" #NORMAL NAME
+message.nick.!: "§7 zruggsetzt worde!"
+message.nick.nickof: "Nickname vom §e" #TARGET
+message.nick.wasreset: "§7 isch erfolgriech zruggsetzt worde"
+message.nick.wassetto: "Din Nickname isch uf §e" #NICKNAME
+message.nick.by: "§7 gänderet vom §e" #SENDER
+message.nick.wassetto2: "§7 isch geändert worde uf §e" #NICKNAME
+message.nick.usage: "Benutzig: /nickname <Nickname> <Spieler>"
+
+#Command: Ping
+#Ping: other
+message.ping.sender.part1: "Ping vom §e" #TARGET
+message.ping.sender.part2: "§7: §e" #PING
+message.ping.sender.part3: "ms"
+
+#Ping: self
+message.ping.self: "Dein Ping isch: §e" #PING
+
+#Command: TStop
+message.tstop: "Zeit isch gstoppt worde!"
+
+#Command: PlayerSize
+#PlayerSize: other
+message.size.sizewasresetby: "Dini Grössi isch vom §e" #SENDER
+message.size.!: "§7zruggsetzt worde!"
+message.size.sizeof: "Grössi vom §e" #TARGET
+message.size.wasreset: "§7 isch erfolgriech zruggsetzt worde!"
+message.size.by: "§7 von §e" #SENDER
+message.size.target.part1: "Dini Grössi isch gändered uf §e" #NEWSIZE
+message.size.sender.part1: "Grössi vom §e" #TARGET
+message.nick.sender.part2: "§7 isch erfolgriech gändered uf §e" #NEWSIZE
+message.size.usage: "Benutzig: /playersize <0.1-20> <Spieler>"
+
+#PlayerSize: self
+message.size.self.reset: "Dini Grössi isch zruggsetzt worde!"
+message.size.self.setsize: "Dini Grössi hät sich erfolgriech gändered uf §e" #NEWSIZE
+
+#Command: Vanish
+message.vanish.usage: "Benutzig: /vanish <on/off> <Spieler>"
+message.vanished.true: "Du bisch jetzt unsichtbar!"
+message.vanished.false: "Du bisch wieder sichtbar!"
+
+#Command: Tphere
+message.tphere.target: "Du bisch zum §e" #SENDER
+message.tphere.!: "§7teleportiert worde!"
+message.tphere.sender.part1: "De Spieler §e" #TARGET
+message.tphere.sender.part2: "§7 isch erfolgriech zu dir teleportiert worde!"
+message.tphere.usage: "Benutzig: /tphere <Spieler>"
+
+#Command: ServerHelper - HELP
+message.help.aliases: "§7Alli §eServerHelper §7Command aliases:"
+message.help.CommandList: "§7Command Liste §eServerHelper§7:"
+message.help.wantseealiases: "§7Du möchtisch alli Command aliases gseh? Mach §e/shh alias!"
+
+#Command - LIST
+message.help.shhelp: "§7ServerHelper Hilfe Command"
+message.help.broadcast: "§7broadcast dini Nachricht zu allne Spieler!"
+message.help.nickname: "§7Ändert din Nickname"
+message.help.vanish: "§7Macht dich unsichtbar"
+message.help.clear: "§7leert dis komplettes Inventar"
+message.help.cleararmor: "§7leert nur dis Rüstigs Inventar"
+message.help.size: "§7Ändert dink Skin Grössi"
+message.help.fly: "§7erlaubt zflüge im Überlebensmodus"
+message.help.feed: "§7füetered Spieler"
+message.help.heal: "§7Heilt Spieler"
+message.help.test: "§7Test/Ping Command"
+message.help.gmc: "§7Ändered din Spielmodus uf Kreativ"
+message.help.gms: "§7Ändered d7n Spielmodus uf Überleben"
+message.help.gma: "§7Ändered din Spielmodus uf Abentüür"
+message.help.gmsp: "§7Ändered din Spielmodus uf Zueschauer"
+message.help.day: "§7Setzt dZiit uf Tag"
+message.help.night: "§7Setzt dZiit uf Nacht"
+message.help.itemid: "§7Seid dir d'ID vom Item i diniere Hand"
+message.help.tstop: "§7Stopt dZiit i diniere Welt"
+message.help.about: "§7über ServerHelper"

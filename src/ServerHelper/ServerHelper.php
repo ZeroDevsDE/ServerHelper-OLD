@@ -34,19 +34,19 @@ use pocketmine\math\Vector3;
 class ServerHelper extends PluginBase{
 
     protected $lang;
+    private $configversion = "2.5.2[b]";
 
     public function onEnable()
     {
+        //LANG\\
         $this->saveResource("config.yml");
         @mkdir($this->getDataFolder());
         $this->cfg = new Config($this->getDataFolder() . "config.yml", Config::YAML);
 
-        if (!file_exists($this->getDataFolder() . "lang/")) {
-            @mkdir($this->getDataFolder() . "lang/");
             $this->saveResource("lang/English.yml");
             $this->saveResource("lang/Deutsch.yml");
+            $this->saveResource("lang/Dütsch.yml");
             $this->saveResource("lang/Italiano.yml");
-        }
 
         $language = $this->cfg->get("Language");
         if(!is_file($this->getDataFolder() . "lang/{$language}.yml")){
@@ -59,19 +59,65 @@ class ServerHelper extends PluginBase{
         $this->lang = new Config($this->getDataFolder() . "lang/{$language}.yml", Config::YAML);
         $this->lang->save();
 
+        //ADDON LOADER\\
+        $addon_soupffa = $this->getServer()->getPluginManager()->getPlugin("SoupFFA-PME");
+        $addon_lobbyitems = $this->getServer()->getPluginManager()->getPlugin("LobbyItems-PME");
+        $addon_report = $this->getServer()->getPluginManager()->getPlugin("Report-PME");
+        $addon_smallplugins_nick = $this->getServer()->getPluginManager()->getPlugin("Nickname-PME");
+        $addon_smallplugins_vanish = $this->getServer()->getPluginManager()->getPlugin("Vanish-PME");
+        $addon_mecommand = $this->getServer()->getPluginManager()->getPlugin("MeCommand-PME");
+
+
+
+        //INFO GATHER\\
         $pluginversion = $this->cfg->get("VERSION");
         $prefix = $this->cfg->get("PluginPrefix");
         $broadcastprefix = $this->cfg->get("BroadcastPrefix");
         $langselected = $this->getLang("lang.NAME");
         $langid = $this->getLang("lang.ID");
 
-        //log stuff
+        //LOG STUFF\\
         $this->getLogger()->info(SH::GREEN . $this->getLang("message.logger.startup"));
         $this->getLogger()->info(SH::GREEN . $this->getLang("message.logger.version") . $pluginversion);
         $this->getLogger()->info(SH::GREEN . $this->getLang("message.logger.choosen.prefix") . $prefix);
         $this->getLogger()->info(SH::GREEN . $this->getLang("message.logger.choosen.bcprefix") . $broadcastprefix);
         $this->getLogger()->info(SH::GREEN . $this->getLang("message.logger.choosen.lang") . $langselected . " §eID: §7" . $langid);
+        $this->getLogger()->info(SH::GREEN . $this->getLang("message.logger.addons"));
+
+        //SEND ADDON INFO\\
+        if($addon_soupffa == true){
+            $this->getLogger()->info($this->getLang("message.logger.addonfound") . " §7SoupFFA-PME");
+        }
+        if($addon_soupffa == null){
+            $this->getLogger()->info($this->getLang("message.logger.addonnotfound") . " §7SoupFFA-PME");
+        }
+        if($addon_lobbyitems == true){
+            $this->getLogger()->info($this->getLang("message.logger.addonfound") . " §7LobbyItems-PME");
+        }
+        if($addon_lobbyitems == null){
+            $this->getLogger()->info($this->getLang("message.logger.addonnotfound") . " §7LobbyItems-PME");
+        }
+        if($addon_report == true){
+            $this->getLogger()->info($this->getLang("message.logger.addonfound") . " §7Report-PME");
+        }
+        if($addon_report == null){
+            $this->getLogger()->info($this->getLang("message.logger.addonnotfound") . " §7Report-PME");
+        }
+        if($addon_mecommand == true){
+            $this->getLogger()->info($this->getLang("message.logger.addonfound") . " §7MeCommand-PME");
+        }
+        if($addon_mecommand == null){
+            $this->getLogger()->info($this->getLang("message.logger.addonnotfound") . " §7MeCommand-PME");
+        }
+
+        //SEND BANNER\\
         $this->Banner();
+
+        //CONFIG CHECKER\\
+        if($this->cfg->get("VERSION") !== $this->configversion){
+            $this->getLogger()->critical($this->getLang("message.critical.incompatibleconfig"));
+            $this->setEnabled(false);
+        }
     }
 
     public function getLang(string $configKey, array $keys = array()) {
@@ -103,7 +149,7 @@ class ServerHelper extends PluginBase{
         $this->getLogger()->info($banner);
     }
 
-    //Commands
+    //COMMANDS\\
     public function onCommand(CommandSender $sender, Command $command, string $lable, array $args): bool
     {
         $prefix = $this->cfg->get("PluginPrefix");

@@ -6,6 +6,7 @@
 
 ### Description:
 Simple Helper Plugin for Servers!
+API 4.0.0 - MCBE 1.7 Compatible!
 
 ### Planned and finished features:
 - [ ] Commands

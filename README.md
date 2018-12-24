@@ -6,10 +6,10 @@
 
 ### Description:
 Simple Helper Plugin for Servers!
-API 4.0.0 - MCBE 1.7 Compatible!
+API 4.0.0 - MCBE 1.7-1.8 Compatible!
 
 ### Planned and finished features:
-- [ ] Commands
+- [x] Commands
     - [x] /shhelp
     - [x] /changelog
     - [x] /about
@@ -19,7 +19,7 @@ API 4.0.0 - MCBE 1.7 Compatible!
     	- [x] /tstop(stop time)
     	- [ ] /votetime
     - [x] Gamemode
-		- [x] /gmc
+	- [x] /gmc
     	- [x] /gms
     	- [x] /gmsp
     	- [x] /gma
@@ -38,34 +38,33 @@ API 4.0.0 - MCBE 1.7 Compatible!
     - [x] /vanish 
     - [x] /size | /playersize
     - [ ] /near
-- [ ] Api's
+- [x] Api's
     - [x] TeleportAPI
     - [x] Addon Loader(get other installed PME Plugins)
     - [x] Config checker
     - [ ] BanAPI
-- [ ] other functions
+- [x] other functions
 	- [ ] UI's/Hotbar
     - [x] multilang system(
     - [x] Plugin prefix
     - [x] Permission System
     - [x] Other Player command(f.e.: /gmc <Player>)
     - [x] Config File
-    - [ ] Addon Plugins
+    - [x] Addon Plugins
         - [x] LobbyItems
         - [ ] Report
         - [ ] Love
         - [ ] Job
-    - [ ] Game Plugins
+    - [x] Game Plugins
     	- [x] SoupFFA
     	- [ ] KnockBackFFA(KnockIt)
-- [ ] Fun Addons
+- [x] Fun Addons
     - [x] Player Size
     - [x] Vanish
     - [x] NickNames(/nick <nickname>
 
 ### Next TODO:
 - hotbar change
-- add more languages
 
 # Addon Plugins
 - [LobbyItems-PMExperts](https://github.com/PMExpertsDE/LobbyItems-PMExperts)
